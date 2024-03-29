@@ -1,0 +1,23 @@
+site_name: PrintGO
+repo_name: "2024.1-PrintGo-Doc"
+repo_url: https://github.com/fga-eps-mds/2024.1-PrintGo-Doc
+docs_dir: docs
+
+theme:
+  name: material
+  language: pt
+  features:
+           - navigation.tabs
+  logo: assets/logo/logoPrintGo.svg
+  favicon: assets/logo/logoPrintGo.png
+
+nav:
+  - Home: 
+    - Início: index.md
+  - Andamento:
+    - Pré-sprints: 
+      - Semana 1: andamento/semana1.md
+      - Semana 2: andamento/semana2.md
+
+extra_css:
+  - stylesheets/extra.css
