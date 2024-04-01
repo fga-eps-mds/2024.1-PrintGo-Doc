@@ -18,7 +18,7 @@ nav:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
       - Semana 2: andamento/semana2.md
-      - Semana 3: andamento/semana3.md
+      # - Semana 3: andamento/semana3.md
 
 extra_css:
   - stylesheets/extra.css
