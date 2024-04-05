@@ -110,3 +110,6 @@ git commit -m "Mensagem do commit" -m "Closes #1"
 
 - Tava cometendo um erro bobo. ;-;
 
+## Ana Júlia
+
+- Aprendi que pra ver as branches remotas tem que colocar "-a" depois do git branch 👍
