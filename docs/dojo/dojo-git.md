@@ -94,3 +94,8 @@ git commit -m "Mensagem do commit" -m "#1"
 ```bash
 git commit -m "Mensagem do commit" -m "Closes #1"
 ```
+
+## Caio Lamego
+
+- Esse texto faz parte da tarefa do Dojo. 
+- O Dojo foi ótimo
