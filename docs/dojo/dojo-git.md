@@ -99,3 +99,7 @@ git commit -m "Mensagem do commit" -m "Closes #1"
 
 - Esse texto faz parte da tarefa do Dojo. 
 - O Dojo foi ótimo
+
+## Cairo Florenço
+
+- Tava cometendo um erro bobo. ;-;
