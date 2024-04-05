@@ -95,7 +95,14 @@ git commit -m "Mensagem do commit" -m "#1"
 git commit -m "Mensagem do commit" -m "Closes #1"
 ```
 
+<<<<<<< HEAD
 ## Marcus Escobar
 
 - Git é uma tecnologia foda, meu mano Linus Torvalds estava inspirado!!
 - Não tive nenhuma dificuldade com o Dojo ,achei excelente. Daniel explica muito bem!!
+=======
+## Caio Lamego
+
+- Esse texto faz parte da tarefa do Dojo. 
+- O Dojo foi ótimo
+>>>>>>> 45378052765cd43b5d0b3168da2c7c047df9b7ae
