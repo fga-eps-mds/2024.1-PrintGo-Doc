@@ -10,3 +10,9 @@ Durante essa semana foram realizados as seguintes atividades da Lean Inception:
 - OBJETIVOS DO PRODUTO
 
 As atividades foram revisadas durante a [reunião](../atas/03-04.md) semanal com os POs.
+
+## Dojo de Git/GitHub
+
+O [Dojo](../dojo/dojo-git.md) de Git/GitHub foi realizado com o objetivo de nivelar o conhecimento da equipe sobre o uso do Git e GitHub. Durante o Dojo, os membros da equipe tiveram a oportunidade de praticar comandos básicos do Git, bem como aprender boas práticas de uso do Git e GitHub.
+
+
