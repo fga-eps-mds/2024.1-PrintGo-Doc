@@ -129,7 +129,7 @@ Outro exemplo fechando uma issue:
 > Fixes: #[número da issue]
 Exemplo de PR:
 
-    [Documentação] - Criar Guia de Contribuição
+    [Docs] - Criar Guia de Contribuição
 
     Criação do guia de contribuição para orientar os membros da equipe sobre as práticas e políticas de contribuição ao projeto.
 
