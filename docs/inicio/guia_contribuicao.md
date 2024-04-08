@@ -6,7 +6,7 @@
 
 ## 1. Política de branches
 
-&emsp;&emsp;As branchs base do projeto são a [main](#main) e a [develop](#develop). A partir delas, são criadas as branchs de desenvolvimento e correção de bugs.
+&emsp;&emsp;As branches base do projeto são a [main](#main) e a [develop](#develop). A partir delas, são criadas as branches de desenvolvimento e correção de bugs.
 
 ### Main
 
@@ -20,7 +20,7 @@ Derivada da main, serve como ponto zero do desenvolvimento, sincronizando-se con
 
 ### 1.1. Novas branches
 
-Para criar novas branchs um padrão deve ser seguido para dar o nome a branch:
+Para criar novas branches um padrão deve ser seguido para dar o nome a branch:
 
     <tipo>/x-nome-da-issue
 
@@ -57,9 +57,9 @@ Exemplo:
     Esta é a ramificação designada para a implementação de soluções para bugs e erros emergentes encontrados no ambiente de produção, representado pela [main](#main). Deve ser criada a partir da ramificação [main](#main). Após resolver o ponto abordado pela ramificação, ela deve ser mesclada de volta à [main](#main).
     Além disso, quando um hotfix é mesclado à [main](#main), também é necessário realizar a mesclagem da [main](#main) com a [develop](#develop).
 
-### 1.2. Repositório de documentação
+### 1.3. Repositório de documentação
 
-&emsp;&emsp;O repositório de documentação é um repositório separado do repositório principal do projeto, que contém a documentação do projeto. A política de branches para o repositório de documentação é a mesma do repositório principal, com exceção da branch [develop](#develop) que não existe.
+&emsp;&emsp;O repositório de documentação é um repositório separado dos repositórios de código fonte, que contém a documentação do projeto. A política de branches para o repositório de documentação é a mesma dos outros repositórios, com exceção da branch [develop](#develop) que não existe.
 
 ## 2. Política de issues
 Para criar uma nova issue, um padrão deve ser seguido para dar o nome a issue:
@@ -73,8 +73,7 @@ Para criar uma nova issue, um padrão deve ser seguido para dar o nome a issue:
 
 - `Nome da issue` é o nome da issue que será criada.
 
-**Importante:** O nome da issue deve descrever de forma clara e objetiva o que será feito e a descrição mais completa
-deverá ficar no corpo da issue.
+**Importante:** O nome da issue deve descrever de forma clara e objetiva o que será feito e a descrição mais completa deverá ficar no corpo da issue.
 
 ## 3. Política de commits
 O padrão de commits a ser seguido é o [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), além das seguintes regras:
@@ -143,3 +142,4 @@ Exemplo de PR:
 |:-:|---|---|
 | 07/04/2024 | Criação do Guia de Contribuição | Daniel Vinicius |
 | 08/04/2024 | Revisão do Guia de Contribuição | Matheus Brant |
+| 08/04/2024 | Revisão do Guia de Contribuição | Lucas Braun |
