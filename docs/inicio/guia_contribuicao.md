@@ -142,3 +142,4 @@ Exemplo de PR:
 |**Data**|**Descrição**|**Autor(es)**|
 |:-:|---|---|
 | 07/04/2024 | Criação do Guia de Contribuição | Daniel Vinicius |
+| 08/04/2024 | Revisão do Guia de Contribuição | Matheus Brant |
