@@ -13,7 +13,7 @@ theme:
 
 nav:
   - Home: 
-    - Início: inicio/index.md
+    - Início: index.md
     - Guia de Contribuição: inicio/guia_contribuicao.md
   - Andamento:
     - Pré-sprints: 
