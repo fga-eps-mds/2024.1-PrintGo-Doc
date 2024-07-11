@@ -27,6 +27,8 @@ nav:
       - Reunião com POs dia 10/04/2024: atas/10-04.md
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
+  - Documentos do Projeto:
+    - WBS: documentosProjeto/wbs.md
 
 extra_css:
   - stylesheets/extra.css
