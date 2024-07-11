@@ -1,7 +1,7 @@
 # Semana 5
 ## Lean Inception
 
-Na 5ª semana do projeto, os PO's fizeram a validação das etapas de "Personas" e "Jornadas" do Lean Inception de maneira assíncrona. Ainda, na [reunião](../atas/05-04.md) semanal, foi abordada apenas a etapa de Brainstorming de Funcionalidades, feita em conjunto entre os PO's e equipe de desenvolvimento.
+Na 5ª semana do projeto, os PO's fizeram a validação das etapas de "Personas" e "Jornadas" do Lean Inception de maneira assíncrona. Ainda, na [reunião](../atas/17-04.md) semanal, foi abordada apenas a etapa de Brainstorming de Funcionalidades, feita em conjunto entre os PO's e equipe de desenvolvimento.
 
 ## Reunião Extra 
 
