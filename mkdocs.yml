@@ -32,9 +32,3 @@ nav:
 
 extra_css:
   - stylesheets/extra.css
-
-  - Documentos de Dojo:
-    - Git: dojo/dojo-git.md
-
-extra_css:
-  - stylesheets/extra.css
