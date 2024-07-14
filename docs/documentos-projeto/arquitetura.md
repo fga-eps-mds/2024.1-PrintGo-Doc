@@ -55,3 +55,10 @@ PostgreSQL é um sistema de banco de dados relacional de código aberto conhecid
 > React. Disponível em: [https://react.dev/](https://react.dev/)
 
 > IBM - O que são microsserviços? Disponível em [https://www.ibm.com/br-pt/topics/microservices](https://www.ibm.com/br-pt/topics/microservices)
+
+## 4. Versionamento
+
+
+|**Data**|**Descrição**|**Autor(es)**|
+|:-:|---|---|
+| 14/07/2024 | Criação do Documento | Lucas Braun |
