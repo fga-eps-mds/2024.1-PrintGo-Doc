@@ -24,6 +24,8 @@ nav:
       - Reunião com POs dia 03/04/2024: atas/03-04.md
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
+  - Definição do Produto:
+    - Lean Inception: visaoproduto/VisaoDoProduto
 
 extra_css:
   - stylesheets/extra.css
