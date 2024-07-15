@@ -25,7 +25,7 @@ nav:
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
   - Definição do Produto:
-    - Lean Inception: visaoproduto/VisaoDoProduto
+    - Lean Inception: visaoproduto/VisaoDoProduto.md
 
 extra_css:
   - stylesheets/extra.css

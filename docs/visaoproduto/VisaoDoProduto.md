@@ -3,14 +3,14 @@
 A Lean Inception é uma junção de atividades dinâmicas que acontecem para definir objetivos, estratégias e a definição do produto, mapeando e priorizando as funcionalidades desejáveis para serem entregues gradualmente, construindo os MVPs. A metodologia tem como foco principal a descoberta e compreensão coletiva da equipe a respeito do projeto que será desenvolvido, oferecendo uma visão clara dos caminhos que devem ser seguidos(CAROLLI,2018).
 
 ## Visão do Produto
-Nessa etapa é definido a essência e valor de negócio do produto, de uma maneira clara e convincente para os clientes. Dessa forma, a visão de produto auxilia a trilhar um caminho inicial, definindo as principais características e estratégias de posicionamento o produto terá e evitando desvios de foco no futuro do desenvolvimento(CAROLLI,2018).
+Nessa etapa são definidos a essência e o valor de negócio do produto, de uma maneira clara e convincente para os clientes. Dessa forma, a visão de produto auxilia a trilhar um caminho inicial, definindo as principais características e estratégias de posicionamento o produto terá e evitando desvios de foco no futuro do desenvolvimento(CAROLLI,2018).
 
 Abaixo, o quadro de Visão de Produto feito pela equipe junto aos clientes:
 
 ![VisaodProduto](../assets/leaninception/visaoproduto.png)
 
 ## O produto É - Não É - Faz - Não faz
-Essa atividade serve para esclarecer as limitações do produto em relação ao que ele é (É/Não é) e ao que ele faz (Faz/Não faz). Sendo assim, ao final dessa atividade os participantes possuem uma visão mais alinhada para tomar decisões estratégicas em relação as funcionalidades do produto(CAROLLI,2018).
+Essa atividade serve para esclarecer as limitações do produto em relação às funcionalidades, respondendo o que ele é (É/Não é) e o que ele faz (Faz/Não faz). Sendo assim, ao final dessa atividade os participantes possuem uma visão mais alinhada para tomar decisões estratégicas em relação as funcionalidades do produto(CAROLLI,2018).
 
 Abaixo, o quadro É - Não é - Faz - Não faz feito pela equipe junto aos clientes:
 
@@ -69,22 +69,22 @@ Na etapa do sequenciador, as funcionalidades são separadas em ondas que duram u
 
 - Uma onda não pode conter mais de um cartão vermelho.
 
-- Uma onda não pode conter três cartões somente amarelos ouvermelhos.
+- Uma onda não pode conter três cartões somente amarelos ou vermelhos.
 
 - A soma de esforço dos cartões não pode ultrapassar cinco “E”.
 
-- A soma de valor dos cartões não pode ser menos de quatro “$” equatro corações.
+- A soma de valor dos cartões não pode ser menos de quatro “$” e quatro corações.
 
 - Se um cartão depende de outro, esse outro deve estar em algumaonda anterior.
 
 Após definir as ondas, o MVP (Produto Mínimo Viável) e os incrementos devem ser identificados. O MVP é criado para validar um pequeno conjunto de hipóteses sobre um produto e a sua função em um negócio. E os incrementos são as adições subsequentes ao MVP(CAROLLI,2018).  
 
-Abaixo, o sequeciador realizado, em reunião, pela equipe junto aos clientes:
+Abaixo, o sequenciador realizado, em reunião, pela equipe junto aos clientes:
 
 ![Sequenciador](../assets/leaninception/sequenciador.png)
 
 ## Canvas MVP
-Ao final do Lean Inception, é feito o Canvas MVP, que é uma representação visual que resume o MVP, juntando todas as estapas abordadas anteriormente. Finalmente, resulta no seguinte quadro feito pela equipe:
+Ao final do Lean Inception, é feito o Canvas MVP, que é uma representação visual que resume o MVP, juntando todas as etapas abordadas anteriormente. Finalmente, resulta no seguinte quadro feito pela equipe:
 
 ![CanvasMVP](../assets/leaninception/canvasmvp.png)
 
