@@ -31,6 +31,7 @@ nav:
     - Git: dojo/dojo-git.md
   - Documentos do projeto:
     - Metodologias: documentos-projeto/metodologias.md
+    - Arquitetura: documentos-projeto/arquitetura.md
 
 extra_css:
   - stylesheets/extra.css

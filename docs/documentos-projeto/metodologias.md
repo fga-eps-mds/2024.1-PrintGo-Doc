@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-&emsp;&emsp;Este documento apresenta de forma as metodologias empregadas
+&emsp;&emsp;Este documento apresenta as metodologias empregadas
 ao longo do desenvolvimento do projeto. As abordagens metodológicas descritas 
 aqui foram selecionadas com o objetivo de garantir a eficiência, a qualidade e
 a consistência dos resultados obtidos.
