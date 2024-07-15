@@ -30,7 +30,7 @@ nav:
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
   - Documentos do Projeto:
-    - WBS: documentos-projeto/wbs.md
+    - EAP: documentos-projeto/eap.md
     - Arquitetura: documentos-projeto/arquitetura.md
 
 extra_css:
