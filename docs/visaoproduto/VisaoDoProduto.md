@@ -10,7 +10,7 @@ Abaixo, o quadro de Visão de Produto feito pela equipe junto aos clientes:
 ![VisaodProduto](../assets/leaninception/visaoproduto.png)
 
 ## O produto É - Não É - Faz - Não faz
-Essa atividade serve para esclarecer as limitações do produto em relação às funcionalidades, respondendo o que ele é (É/Não é) e o que ele faz (Faz/Não faz). Sendo assim, ao final dessa atividade os participantes possuem uma visão mais alinhada para tomar decisões estratégicas em relação as funcionalidades do produto(CAROLLI,2018).
+Essa atividade serve para esclarecer as limitações do produto em relação ao que ele é (É/Não é) e ao que ele faz (Faz/Não faz). Sendo assim, ao final dessa atividade os participantes possuem uma visão mais alinhada para tomar decisões estratégicas em relação às funcionalidades do produto(CAROLLI,2018).
 
 Abaixo, o quadro É - Não é - Faz - Não faz feito pela equipe junto aos clientes:
 
