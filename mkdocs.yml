@@ -30,6 +30,7 @@ nav:
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
   - Documentos do Projeto:
+    - Metodologias: documentos-projeto/metodologias.md
     - EAP: documentos-projeto/eap.md
     - Arquitetura: documentos-projeto/arquitetura.md
 
