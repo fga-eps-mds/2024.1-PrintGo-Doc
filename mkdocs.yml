@@ -29,8 +29,9 @@ nav:
       - Reunião com POs dia 17/04/2024: atas/17-04.md
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
-  - Documentos do projeto:
+  - Documentos do Projeto:
     - Metodologias: documentos-projeto/metodologias.md
+    - EAP: documentos-projeto/eap.md
     - Arquitetura: documentos-projeto/arquitetura.md
 
 extra_css:
