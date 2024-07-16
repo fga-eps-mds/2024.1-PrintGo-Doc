@@ -57,6 +57,7 @@ Na atividade de revisão técnica, o time detalha um pouco mais as funcionalidad
 Essas respostas são dadas em medidas de "E", "$" e "<3". As medidas variam de 1 a 3, de acordo com a intensidade que cada uma representa. As cores das funcionalidades são escolhidas de acordo com o seguinte gráfico:
 
 ![grafico](../assets/leaninception/graficoEsforco.png)
+<center>Fonte: CAROLLI, 2018.</center>
 
 Abaixo, o quadro de revisão técnica criado pela equipe junto aos clientes:
 
