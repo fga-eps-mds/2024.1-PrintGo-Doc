@@ -15,6 +15,7 @@ nav:
   - Home: 
     - Início: index.md
     - Guia de Contribuição: inicio/guia_contribuicao.md
+    - Comunicação: comunicacao/comunicacao.md
   - Andamento:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
