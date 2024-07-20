@@ -10,7 +10,7 @@
 
 ### 2.1. Recursos humanos
 
-&emsp;&emsp;Foi utilizado o custo médio anual por aluno de instituto federal. De acordo com o [Jornal da UNESP](https://jornal.unesp.br/2022/06/08/cobranca-de-mensalidade-nao-e-a-solucao-para-o-financiamento-da-universidade-publica/), esse custo é de R$40.900 anual por aluno.
+&emsp;&emsp;Foi utilizado o custo médio anual por aluno de instituto federal. De acordo com o [Jornal da UNESP](https://jornal.unesp.br/2022/06/08/cobranca-de-mensalidade-nao-e-a-solucao-para-o-financiamento-da-universidade-publica/), no ano de 2015, esse custo era de R$40.900 anual por aluno.
 
 &emsp;&emsp;É necessário adaptar os dados à inflação atual, ano 2024. Após aplicar essa correção utilizando a calculadora de inflação do [IBGE](https://www3.bcb.gov.br/CALCIDADAO/publico/corrigirPorIndice.do?method=corrigirPorIndice#), o valor passa a ser R$ 79.329,45 anual.
 
@@ -62,7 +62,7 @@
 
 ## 3. Definição do orçamento inicial estimado
 
-&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento  inicial total estimado para o projeto em 11 semanas é de R$ 133.973,49.
+&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 11 semanas é de R$ 133.973,49.
 
 ## 4. Planilha de custos
 
