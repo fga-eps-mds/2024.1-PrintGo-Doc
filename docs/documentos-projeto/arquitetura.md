@@ -17,6 +17,7 @@ O sistema possui três microsserviços:
 - User: Responsável por gerenciar usuários da aplicação.
 - Printer: Realiza o gerenciamento de impressoras e impressões.
 - Occurrence: Gerencia ocorrências.
+- Contract: Gerencia dados de contratos.
 
 #### Interface de Usuário
 
@@ -62,3 +63,4 @@ PostgreSQL é um sistema de banco de dados relacional de código aberto conhecid
 |**Data**|**Descrição**|**Autor(es)**|
 |:-:|---|---|
 | 14/07/2024 | Criação do Documento | Lucas Braun |
+| 22/07/2024 | Corrige diagrama e serviços | Lucas Braun |
