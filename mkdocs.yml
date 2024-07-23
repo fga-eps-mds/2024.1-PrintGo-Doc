@@ -15,7 +15,9 @@ nav:
   - Home: 
     - Início: index.md
     - Guia de Contribuição: inicio/guia_contribuicao.md
-    - Comunicação: comunicacao/comunicacao.md
+  - Plano e Monitoramento:
+    - Plano de Comunicação: plano-monitoramento/comunicacao.md
+    - Plano de Custos: plano-monitoramento/plano-custos.md
   - Andamento:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
