@@ -49,9 +49,19 @@ PostgreSQL é um sistema de banco de dados relacional de código aberto conhecid
 
 ## 3. Visão de dados
 
+### Modelo Entidade-Relacionamento (MER)
+
+Um Modelo Entidade-Relacionamento (MER) é uma representação que descreve a estrutura de um banco de dados. Ele utiliza três componentes principais: entidades, que representam objetos ou conceitos; atributos, que são as propriedades dessas entidades; e relacionamentos, que mostram como as entidades estão associadas entre si. O MER facilita a compreensão e o planejamento do banco de dados antes de sua implementação, garantindo que todas as necessidades de dados e suas interações sejam consideradas.
+
+Em uma arquitetura de microsserviços, cada serviço possui seu próprio banco de dados, mas pode referenciar dados de outros serviços usando IDs ou chaves simbólicas, garantindo a independência e a comunicação via APIs.
+
+### Diagrama Lógico de Dados (DLD)
+
+O Diagrama Lógico de Dados (DLD) é uma representação gráfica detalhada que descreve a estrutura de um banco de dados em termos de tabelas e suas relações. Ele é uma evolução do Modelo Entidade-Relacionamento (MER) e visa fornecer uma visão mais específica e técnica da organização dos dados, facilitando a implementação no banco de dados físico.
+
 ### 3.1. Printer Service
 
-#### Modelo Entidade-Relacionamento (MER)
+#### MER
 
 Entidades:
 
@@ -62,32 +72,43 @@ Atributos:
 
 - EQUIPAMENTO
     - <ins>id</ins>
-    - numero_contrato
+    - numeroContrato
     - ip
-    - id_localizacao
-    - data_instalacao
-    - data_retirada
-    - contador_instalacao_pb
-    - contador_instalacao_cor
-    - contador_atual_pb
-    - contador_atual_cor
-    - contador_retirada_pb
-    - contador_retirada_cor
-    - dentro_da_rede
+    - idLocalizacao
+    - dataInstalacao
+    - dataRetirada
+    - contadorInstalacaoPB
+    - contadorInstalacaoCor
+    - contadorAtualPB
+    - contadorAtualCor
+    - contadorRetiradaPB
+    - contadorRetiradaCor
+    - estaNaRede
     - ativo
 
 - MODELO
     - <ins>id</ins>
     - nome
     - marca
+    - colorido
+    - oidModelo
+    - oidNumeroSerie
+    - oidFirmware
+    - oidTempoAtivo
+    - oidDigitalizacoes
+    - oidCopiasPB
+    - oidCopiasCor
+    - oidTotalGeral
 
 Relacionamentos:
 
-asdadasd
+- IMPRESSORA ***pertence*** a um MODELO
+    - Uma impressora pertence a apenas um modelo, mas um único modelo pode ter várias impressoras.
+    - Cardinalidade 1:n
 
-#### Diagrama Lógico de Dados (DLD)
+#### DLD
 
-asdasdasd imagem
+imagem
 
 ### 3.2. User Service
 
@@ -105,20 +126,18 @@ Atributos:
     - nome
     - senha
     - documento
-    - id_unidade
+    - idUnidade
     - resetPasswordToken
     - resetPasswordExpires
     - cargo
-
-Relacionamentos:
-
-adasdadadsasd
 
 #### DLD
 
 imagem
 
 ### 3.3. Contract Service
+
+#### MER
 
 Entidades:
 
@@ -129,15 +148,15 @@ Atributos:
 - CONTRATO:
     - <ins>id</ins>
     - numero
-    - gestor
+    - idGestor
     - descricao
-    - data_inicio
-    - data_termino
+    - dataInicio
+    - dataTermino
     - ativo
 
-Relacionamentos:
+#### DLD
 
-asdasdas
+imagem
 
 ## 4. Referências Bibliográficas
 
