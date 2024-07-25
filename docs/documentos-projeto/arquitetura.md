@@ -47,7 +47,99 @@ Node.js é uma plataforma de backend baseada em JavaScript, ideal para construir
 
 PostgreSQL é um sistema de banco de dados relacional de código aberto conhecido por sua confiabilidade e robustez. Ele suporta consultas complexas, transações seguras e oferece recursos avançados como indexação eficiente e suporte a tipos de dados variados. É amplamente utilizado em aplicações que requerem armazenamento estruturado e confiável de dados.
 
-## 3. Referências Bibliográficas
+## 3. Visão de dados
+
+### 3.1. Printer Service
+
+#### Modelo Entidade-Relacionamento (MER)
+
+Entidades:
+
+- EQUIPAMENTO
+- MODELO
+
+Atributos:
+
+- EQUIPAMENTO
+    - <ins>id</ins>
+    - numero_contrato
+    - ip
+    - id_localizacao
+    - data_instalacao
+    - data_retirada
+    - contador_instalacao_pb
+    - contador_instalacao_cor
+    - contador_atual_pb
+    - contador_atual_cor
+    - contador_retirada_pb
+    - contador_retirada_cor
+    - dentro_da_rede
+    - ativo
+
+- MODELO
+    - <ins>id</ins>
+    - nome
+    - marca
+
+Relacionamentos:
+
+asdadasd
+
+#### Diagrama Lógico de Dados (DLD)
+
+asdasdasd imagem
+
+### 3.2. User Service
+
+#### MER
+
+Entidades:
+
+- USER
+
+Atributos:
+
+- USER
+    - <ins>id</ins>
+    - email
+    - nome
+    - senha
+    - documento
+    - id_unidade
+    - resetPasswordToken
+    - resetPasswordExpires
+    - cargo
+
+Relacionamentos:
+
+adasdadadsasd
+
+#### DLD
+
+imagem
+
+### 3.3. Contract Service
+
+Entidades:
+
+- CONTRATO
+
+Atributos:
+
+- CONTRATO:
+    - <ins>id</ins>
+    - numero
+    - gestor
+    - descricao
+    - data_inicio
+    - data_termino
+    - ativo
+
+Relacionamentos:
+
+asdasdas
+
+## 4. Referências Bibliográficas
 
 > About PostgreSQL. Disponível em: [https://www.postgresql.org/about/](https://www.postgresql.org/about/)
 
@@ -57,7 +149,7 @@ PostgreSQL é um sistema de banco de dados relacional de código aberto conhecid
 
 > IBM - O que são microsserviços? Disponível em [https://www.ibm.com/br-pt/topics/microservices](https://www.ibm.com/br-pt/topics/microservices)
 
-## 4. Versionamento
+## 5. Versionamento
 
 
 |**Data**|**Descrição**|**Autor(es)**|
