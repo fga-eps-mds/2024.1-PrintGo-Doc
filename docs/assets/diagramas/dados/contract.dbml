@@ -1,0 +1,11 @@
+// Arquivo usado no https://dbdiagram.io
+
+Table Contrato {
+  id integer [primary key]
+  numero varchar
+  idGestor integer
+  descricao varchar
+  dataInicio datetime
+  dataTermino datetime
+  ativo bool
+}

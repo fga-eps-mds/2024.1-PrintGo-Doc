@@ -70,27 +70,30 @@ Entidades:
 
 Atributos:
 
-- EQUIPAMENTO
+- IMPRESSORA
     - <ins>id</ins>
-    - numeroContrato
-    - ip
-    - idLocalizacao
+    - numContrato
+    - numSerie
+    - enderecoIp
+    - estaNaRede 
     - dataInstalacao
-    - dataRetirada
-    - contadorInstalacaoPB
-    - contadorInstalacaoCor
-    - contadorAtualPB
-    - contadorAtualCor
-    - contadorRetiradaPB
-    - contadorRetiradaCor
-    - estaNaRede
-    - ativo
+    - dataRetirada 
+    - ativo 
+    - contadorInstalacaoPB 
+    - contadorInstalacaoCor 
+    - contadorAtualPB 
+    - contadorAtualCor 
+    - contadorRetiradaPB 
+    - contadorRetiradaCor 
+    - localizacao 
+    - padraoId 
 
-- MODELO
+- PADRAO
     - <ins>id</ins>
     - nome
-    - marca
+    - modelo
     - colorido
+    - ativo
     - oidModelo
     - oidNumeroSerie
     - oidFirmware
@@ -100,6 +103,7 @@ Atributos:
     - oidCopiasCor
     - oidTotalGeral
 
+
 Relacionamentos:
 
 - IMPRESSORA ***pertence*** a um MODELO
@@ -108,7 +112,7 @@ Relacionamentos:
 
 #### DLD
 
-imagem
+![dld-printer](../assets/diagramas/dados/printer.png)
 
 ### 3.2. User Service
 
@@ -125,7 +129,6 @@ Atributos:
     - email
     - nome
     - senha
-    - documento
     - idUnidade
     - resetPasswordToken
     - resetPasswordExpires
@@ -133,7 +136,7 @@ Atributos:
 
 #### DLD
 
-imagem
+![dld-user](../assets/diagramas/dados/user.png)
 
 ### 3.3. Contract Service
 
@@ -156,7 +159,7 @@ Atributos:
 
 #### DLD
 
-imagem
+![dld-contract](../assets/diagramas/dados/contract.png)
 
 ## 4. Referências Bibliográficas
 
@@ -175,3 +178,4 @@ imagem
 |:-:|---|---|
 | 14/07/2024 | Criação do Documento | Lucas Braun |
 | 22/07/2024 | Corrige diagrama e serviços | Lucas Braun |
+| 26/07/2024 | Adiciona DLD's | Lucas Braun |
