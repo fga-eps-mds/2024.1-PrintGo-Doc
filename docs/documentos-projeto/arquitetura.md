@@ -161,7 +161,23 @@ Atributos:
 
 ![dld-contract](../assets/diagramas/dados/contract.png)
 
-## 4. Referências Bibliográficas
+## 4. Pacotes
+
+Um diagrama de pacotes é uma ferramenta visual usada na engenharia de software para representar a organização de um sistema em termos de módulos e suas interações. Ele agrupa componentes relacionados, como classes e interfaces, dentro de "pacotes", ajudando a estruturar o sistema de forma mais clara e organizada.
+
+Esses diagramas são úteis para identificar e analisar as dependências entre diferentes partes do sistema, promovendo um design mais coeso e menos acoplado. Além disso, eles facilitam a comunicação entre os membros da equipe de desenvolvimento, fornecendo uma visão clara da arquitetura do sistema.
+
+### 4.1. Diagrama de Pacotes
+
+#### Front-end
+
+![pacotes-front](../assets/diagramas/pacotes-front.png)
+
+#### Back-end - Microsserviço
+
+![pacotes-back](../assets/diagramas/pacotes-back.png)
+
+## 5. Referências Bibliográficas
 
 > About PostgreSQL. Disponível em: [https://www.postgresql.org/about/](https://www.postgresql.org/about/)
 
@@ -171,7 +187,9 @@ Atributos:
 
 > IBM - O que são microsserviços? Disponível em [https://www.ibm.com/br-pt/topics/microservices](https://www.ibm.com/br-pt/topics/microservices)
 
-## 5. Versionamento
+> Diagrama de Pacotes: Definição, Componentes e Exemplos. Disponível em: [https://gitmind.com/pt/diagrama-de-pacotes.html](https://gitmind.com/pt/diagrama-de-pacotes.html)
+
+## 6. Versionamento
 
 
 |**Data**|**Descrição**|**Autor(es)**|
@@ -179,3 +197,4 @@ Atributos:
 | 14/07/2024 | Criação do Documento | Lucas Braun |
 | 22/07/2024 | Corrige diagrama e serviços | Lucas Braun |
 | 26/07/2024 | Adiciona DLD's | Lucas Braun |
+| 28/07/2024 | Adiciona diagramas de pacotes | Lucas Braun |
