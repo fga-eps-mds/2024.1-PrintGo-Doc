@@ -47,7 +47,121 @@ Node.js é uma plataforma de backend baseada em JavaScript, ideal para construir
 
 PostgreSQL é um sistema de banco de dados relacional de código aberto conhecido por sua confiabilidade e robustez. Ele suporta consultas complexas, transações seguras e oferece recursos avançados como indexação eficiente e suporte a tipos de dados variados. É amplamente utilizado em aplicações que requerem armazenamento estruturado e confiável de dados.
 
-## 3. Referências Bibliográficas
+## 3. Visão de dados
+
+### Modelo Entidade-Relacionamento (MER)
+
+Um Modelo Entidade-Relacionamento (MER) é uma representação que descreve a estrutura de um banco de dados. Ele utiliza três componentes principais: entidades, que representam objetos ou conceitos; atributos, que são as propriedades dessas entidades; e relacionamentos, que mostram como as entidades estão associadas entre si. O MER facilita a compreensão e o planejamento do banco de dados antes de sua implementação, garantindo que todas as necessidades de dados e suas interações sejam consideradas.
+
+Em uma arquitetura de microsserviços, cada serviço possui seu próprio banco de dados, mas pode referenciar dados de outros serviços usando IDs ou chaves simbólicas, garantindo a independência e a comunicação via APIs.
+
+### Diagrama Lógico de Dados (DLD)
+
+O Diagrama Lógico de Dados (DLD) é uma representação gráfica detalhada que descreve a estrutura de um banco de dados em termos de tabelas e suas relações. Ele é uma evolução do Modelo Entidade-Relacionamento (MER) e visa fornecer uma visão mais específica e técnica da organização dos dados, facilitando a implementação no banco de dados físico.
+
+### 3.1. Printer Service
+
+#### MER
+
+Entidades:
+
+- EQUIPAMENTO
+- MODELO
+
+Atributos:
+
+- IMPRESSORA
+    - <ins>id</ins>
+    - numContrato
+    - numSerie
+    - enderecoIp
+    - estaNaRede 
+    - dataInstalacao
+    - dataRetirada 
+    - ativo 
+    - contadorInstalacaoPB 
+    - contadorInstalacaoCor 
+    - contadorAtualPB 
+    - contadorAtualCor 
+    - contadorRetiradaPB 
+    - contadorRetiradaCor 
+    - localizacao 
+    - padraoId 
+
+- PADRAO
+    - <ins>id</ins>
+    - nome
+    - modelo
+    - colorido
+    - ativo
+    - oidModelo
+    - oidNumeroSerie
+    - oidFirmware
+    - oidTempoAtivo
+    - oidDigitalizacoes
+    - oidCopiasPB
+    - oidCopiasCor
+    - oidTotalGeral
+
+
+Relacionamentos:
+
+- IMPRESSORA ***pertence*** a um MODELO
+    - Uma impressora pertence a apenas um modelo, mas um único modelo pode ter várias impressoras.
+    - Cardinalidade 1:n
+
+#### DLD
+
+![dld-printer](../assets/diagramas/dados/printer.png)
+
+### 3.2. User Service
+
+#### MER
+
+Entidades:
+
+- USER
+
+Atributos:
+
+- USER
+    - <ins>id</ins>
+    - email
+    - nome
+    - senha
+    - idUnidade
+    - resetPasswordToken
+    - resetPasswordExpires
+    - cargo
+
+#### DLD
+
+![dld-user](../assets/diagramas/dados/user.png)
+
+### 3.3. Contract Service
+
+#### MER
+
+Entidades:
+
+- CONTRATO
+
+Atributos:
+
+- CONTRATO:
+    - <ins>id</ins>
+    - numero
+    - idGestor
+    - descricao
+    - dataInicio
+    - dataTermino
+    - ativo
+
+#### DLD
+
+![dld-contract](../assets/diagramas/dados/contract.png)
+
+## 4. Referências Bibliográficas
 
 > About PostgreSQL. Disponível em: [https://www.postgresql.org/about/](https://www.postgresql.org/about/)
 
@@ -57,10 +171,11 @@ PostgreSQL é um sistema de banco de dados relacional de código aberto conhecid
 
 > IBM - O que são microsserviços? Disponível em [https://www.ibm.com/br-pt/topics/microservices](https://www.ibm.com/br-pt/topics/microservices)
 
-## 4. Versionamento
+## 5. Versionamento
 
 
 |**Data**|**Descrição**|**Autor(es)**|
 |:-:|---|---|
 | 14/07/2024 | Criação do Documento | Lucas Braun |
 | 22/07/2024 | Corrige diagrama e serviços | Lucas Braun |
+| 26/07/2024 | Adiciona DLD's | Lucas Braun |
