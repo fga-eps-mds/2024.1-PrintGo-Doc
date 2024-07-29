@@ -87,7 +87,7 @@ Abaixo, o sequenciador realizado, em reunião, pela equipe junto aos clientes:
 ## Canvas MVP
 Ao final do Lean Inception, é feito o Canvas MVP, que é uma representação visual que resume o MVP, juntando todas as etapas abordadas anteriormente. Finalmente, resulta no seguinte quadro feito pela equipe:
 
-![CanvasMVP](../assets/leaninception/canvasmvp.png)
+![CanvasMVP](../assets/leaninception/canvasmvp2.png)
 
 ## Referências
 >Caroli, Paulo. Lean Inception: como alinhar pessoas e construir o produto certo – 1ª edição atualizada – São Paulo: Editora Caroli, 2018. ISBN 978-85-94377-06-7. E-book. 
