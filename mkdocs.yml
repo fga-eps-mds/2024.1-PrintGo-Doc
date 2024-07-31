@@ -18,6 +18,7 @@ nav:
   - Plano e Monitoramento:
     - Plano de Comunicação: plano-monitoramento/comunicacao.md
     - Plano de Custos: plano-monitoramento/plano-custos.md
+    - Plano de Riscos: plano-monitoramento/plano-riscos.md
   - Andamento:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
@@ -25,11 +26,13 @@ nav:
       - Semana 3: andamento/semana3.md
       - semana 4: andamento/semana4.md
       - Semana 5: andamento/semana5.md
+      - Semana 5: andamento/semana6.md
   - Atas de Reunião:
     - Reuniões:
       - Reunião com POs dia 03/04/2024: atas/03-04.md
       - Reunião com POs dia 10/04/2024: atas/10-04.md
       - Reunião com POs dia 17/04/2024: atas/17-04.md
+      - Reunião com POs dia 17/04/2024: atas/24-04.md
   - Documentos de Dojo:
     - Git: dojo/dojo-git.md
   - Visão do Produto:
@@ -38,6 +41,7 @@ nav:
     - Metodologias: documentos-projeto/metodologias.md
     - EAP: documentos-projeto/eap.md
     - Arquitetura: documentos-projeto/arquitetura.md
+    - Identidade Visual: documentos-projeto/guia_de_estilo.md
 
 extra_css:
   - stylesheets/extra.css

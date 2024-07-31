@@ -62,7 +62,7 @@
 
 ## 3. Definição do orçamento inicial estimado
 
-&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 11 semanas é de R$ 133.973,49.
+&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 8 semanas é de R$ 114.658,79.
 
 ## 4. Planilha de custos
 
