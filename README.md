@@ -6,10 +6,17 @@
 
 ## Sobre
 
-O PrintGo é um sistema produzido para a PC-GO cuja função é monitorar ativos de impressão. A ferramenta, que é de fácil uso, auxilia na contagem de impressões na hora de prestação de contas e para isso apresenta um dashboard que pode ser transformado em relatórios.
+O PrintGo é um sistema produzido para a PC-GO cuja função é monitorar ativos de impressão. A ferramenta, que é de fácil uso, auxilia na contagem de impressões na hora de prestação de contas e para isso apresenta um dashboard e relatórios de uso.
+
+## repositórios do projeto
+
+[Api-Gateway](https://github.com/fga-eps-mds/2024.1-PrintGo-ApiGateway)  
+[ContractService](https://github.com/fga-eps-mds/2024.1-PrintGo-ContractService)  
+[FrontEnd](https://github.com/fga-eps-mds/2024.1-PrintGo-FrontEnd)  
+[PrinterService](https://github.com/fga-eps-mds/2024.1-PrintGo-PrinterService)  
+[UserService](https://github.com/fga-eps-mds/2024.1-PrintGo-UserService)  
 
 ## Como usar o MKDocs?
-
 ### Pré-requisitos
 
 - Ter python instalado na máquina
