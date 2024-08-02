@@ -5,34 +5,34 @@
 O guia de estilo é um conjunto de diretrizes que estabelece padrões e regras para a escrita e apresentação de design para um produto.
 Tem como principal objetivo ajudar a manter a consistência na comunicação visual do projeto, aumentando a sua legibilidade, reconhecimento e memorização pelo público-alvo. Ele pode ser encontrado nesse [link](https://www.figma.com/design/nMiS0y8QcqYYUm4kV6CXba/prototipo-printGo?node-id=329-4113&t=qGfiwgM7LU7An8YZ-1)
 
-![figma](/assets/guia-de-estilo/Guia-Figma.png)
+![figma](../assets/guia-de-estilo/Guia-Figma.png)  
 
 ## 2. Logo
 
-![Logo](/assets/logo/logoPrintGo.svg)
+![Logo](../assets/logo/logoPrintGo.svg)  
 
 
 ### 3 Tipografia
 
 A principal família tipográfica definida para o projeto é a Jost e suas variações de estilo.
 
-![Fontes](/assets/guia-de-estilo/tipografia.png "Tipografia")
+![Fontes](../assets/guia-de-estilo/tipografia.png "Tipografia")  
 
 ### 3.1 Cores
 
 #### Primárias
 
-![cores principais](/assets/guia-de-estilo/primarias.jpeg "primarias")
+![cores principais](../assets/guia-de-estilo/primarias.jpeg "primarias")  
 
 #### Secundárias
 
-![cores secundárias](/assets/guia-de-estilo/secundarias.png "secundarias")
+![cores secundárias](../assets/guia-de-estilo/secundarias.png "secundarias")  
 
 ### 3.2 Ícones
 
 Os icones utilizados na aplicação são obtidos a partir da biblioteca [material-icons](https://mui.com/pt/material-ui/material-icons/)
 
-![ícones](/assets/guia-de-estilo/icones.png "icones")
+![ícones](../assets/guia-de-estilo/icones.png "icones")  
 
 ## 4. Referências
 
