@@ -1,0 +1,11 @@
+// Arquivo usado no https://dbdiagram.io
+
+Table User {
+  id integer [primary key]
+  nome varchar
+  senha varchar
+  idUnidade integer
+  resetPasswordToken varchar
+  resetPasswordExpires varchar
+  cargo varchar
+}

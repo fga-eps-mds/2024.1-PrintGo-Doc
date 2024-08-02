@@ -1,0 +1,38 @@
+// Arquivo usado no https://dbdiagram.io
+
+Table Padrao {
+  id integer [primary key]
+  nome varchar
+  modelo varchar
+  colorido bool
+  oidModelo varchar
+  oidNumeroSerie varchar
+  oidFirmware varchar
+  oidTempoAtivo varchar
+  oidDigitalizacoes varchar
+  oidCopiasPB varchar
+  oidCopiasCor varchar
+  oidTotalGeral varchar
+  ativo bool
+}
+
+Table Impressora {
+  id integer [primary key]
+  numContrato varchar
+  numSerie varchar
+  enderecoIp varchar
+  estaNaRede bool
+  dataInstalacao datetime
+  dataRetirada datetime
+  ativo bool
+  contadorInstalacaoPB integer
+  contadorInstalacaoCor integer
+  contadorAtualPB integer
+  contadorAtualCor integer
+  contadorRetiradaPB integer
+  contadorRetiradaCor integer
+  localizacao varchar
+  padraoId integer
+}
+
+Ref: Impressora.padraoId > Padrao.id
