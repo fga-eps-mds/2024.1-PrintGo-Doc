@@ -56,50 +56,27 @@ Os riscos foram classificados nas seguintes categorias:
 | 15 - 25 | Alto |
 
 ## Identificação dos Riscos
-
-### Tabela de Riscos
-
-| Risco | Descrição | Categoria |
-| :---: | :---: | :---: |
-| R01 | Problemas com as tecnologias escolhidas | Técnico |
-| R02 | Saída de um membro da equipe | Gerencial |
-| R03 | Falta de envolvimento de algum membro | Gerencial |
-| R04 | Deficiência na integração da equipe | Gerencial |
-| R05 | Atraso na entrega de documentação e funcionalidades | Gerencial |
-| R06 | Conflito nos horários dos integrantes | Organizacional |
-| R07 | Problemas com a plataforma de comunicação | Externo |
-| R08 | Questões na definição da arquitetura | Técnico |
-| R09 | Mudanças no escopo do projeto | Gerencial |
-| R10 | Problemas de saúde de um membro | Externo |
-| R11 | Falta de disponibilidade do cliente | Externo |
-| R12 | Código fonte com baixa qualidade | Técnico |
-| R13 | Falta de releases para testes do cliente | Gerencial |
-| R14 | Falta de foco nas reuniões | Gerencial |
-| R15 | Sobrecarga de trabalho para um membro | Gerencial |
-| R16 | Falhas em equipamentos | Externo |
-| R17 | Dependências entre tarefas | Organizacional |
-
 ### Causa e Efeito dos Riscos
 
-| Risco | Causa | Efeito |
-| :---: | :---: | :---: |
-| R01 | Falta de experiência com as tecnologias | Baixa qualidade do produto e atrasos nas entregas |
-| R02 | Problemas pessoais e carga de trabalho excessiva | Redução da capacidade de entrega da equipe |
-| R03 | Desmotivação do integrante | Acúmulo de atividades e impacto na produtividade |
-| R04 | Falta de comprometimento e comunicação deficiente | Falta de alinhamento e eficiência na equipe |
-| R05 | Planejamento inadequado e estimativas erradas | Alteração no cronograma e insatisfação do cliente |
-| R06 | Compromissos adicionais e atividades externas | Problemas de integração e baixa participação nas reuniões |
-| R07 | Interrupções na comunicação da plataforma | Atrasos na tomada de decisões |
-| R08 | Definição incorreta dos requisitos | Baixa qualidade do produto e necessidade de retrabalho |
-| R09 | Mudanças nos requisitos do projeto | Aumento de prazo, custos e insatisfação do cliente |
-| R10 | Problemas de saúde e falta de cuidado | Sobrecarga para os outros membros da equipe |
-| R11 | Falta de comprometimento do cliente e conflitos de agenda | Aumento do retrabalho e dificuldades nas validações |
-| R12 | Falta de revisões e deficiências técnicas | Presença elevada de bugs e dificuldades na manutenção do código |
-| R13 | Problemas no processo de disponibilização do ambiente | Risco de erros na implementação e insatisfação do cliente |
-| R14 | Reuniões prolongadas | Redução da produtividade da equipe |
-| R15 | Má divisão das tarefas e falta de colaboração | Conhecimento técnico concentrado e sobrecarga de trabalho |
-| R16 | Desgaste natural e falta de manutenção | Aumento dos custos e atrasos nas entregas |
-| R17 | Falta de coordenação entre atividades | Bloqueios no progresso de outras tarefas |
+| Risco | Causa | Efeito | Categoria |
+| :---: | :---: | :---: | :---: |
+| R01 | Falta de experiência com as tecnologias | Baixa qualidade do produto e atrasos nas entregas | Técnico |
+| R02 | Problemas pessoais e carga de trabalho excessiva | Redução da capacidade de entrega da equipe | Gerencial |
+| R03 | Desmotivação do integrante | Acúmulo de atividades e impacto na produtividade | Gerencial |
+| R04 | Falta de comprometimento e comunicação deficiente | Falta de alinhamento e eficiência na equipe | Gerencial |
+| R05 | Planejamento inadequado e estimativas erradas | Alteração no cronograma e insatisfação do cliente | Gerencial |
+| R06 | Compromissos adicionais e atividades externas | Problemas de integração e baixa participação nas reuniões | Organizacional |
+| R07 | Interrupções na comunicação da plataforma | Atrasos na tomada de decisões | Externo |
+| R08 | Definição incorreta dos requisitos | Baixa qualidade do produto e necessidade de retrabalho | Técnico |
+| R09 | Mudanças nos requisitos do projeto | Aumento de prazo, custos e insatisfação do cliente | Gerencial |
+| R10 | Problemas de saúde e falta de cuidado | Sobrecarga para os outros membros da equipe | Externo |
+| R11 | Falta de comprometimento do cliente e conflitos de agenda | Aumento do retrabalho e dificuldades nas validações | Externo |
+| R12 | Falta de revisões e deficiências técnicas | Presença elevada de bugs e dificuldades na manutenção do código | Técnico |
+| R13 | Problemas no processo de disponibilização do ambiente | Risco de erros na implementação e insatisfação do cliente | Gerencial |
+| R14 | Reuniões prolongadas | Redução da produtividade da equipe | Gerencial |
+| R15 | Má divisão das tarefas e falta de colaboração | Conhecimento técnico concentrado e sobrecarga de trabalho | Gerencial |
+| R16 | Desgaste natural e falta de manutenção | Aumento dos custos e atrasos nas entregas | Externo |
+| R17 | Falta de coordenação entre atividades | Bloqueios no progresso de outras tarefas | Organizacional |
 
 ### Medidas de Prevenção e Ação
 
@@ -126,9 +103,10 @@ Os riscos foram classificados nas seguintes categorias:
 
 ## Monitoramento dos Riscos
 
-O acompanhamento dos riscos é essencial durante o desenvolvimento de um projeto de software, uma vez que os riscos não são estáticos e podem mudar de nível ao longo do projeto <a href=./#referencias>²</a>. Para realizar esse monitoramento foi criada uma planilha para inserir a pontuação dos riscos para cada sprint.
+O acompanhamento dos riscos é essencial durante o desenvolvimento de um projeto de software, uma vez que os riscos não são estáticos e podem mudar de nível ao longo do projeto. Para realizar esse monitoramento foi criada uma planilha para inserir a pontuação dos riscos para cada sprint.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFZNWo-5ZMo5LQWoeti_hEhLKBpRaBYfn5nQtc-kN6Ow_ybp7xeQu6PR1-a75kM3V8rV0t48XrkXdJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="300"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFZNWo-5ZMo5LQWoeti_hEhLKBpRaBYfn5nQtc-kN6Ow_ybp7xeQu6PR1-a75kM3V8rV0t48XrkXdJ/pubhtml?widget=true&amp;headers=false"
+ width="100%" height="300"></iframe>
 
 
 ## Referências
