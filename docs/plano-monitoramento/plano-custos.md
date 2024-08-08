@@ -56,13 +56,13 @@
 
 &emsp;&emsp;Somando as estimativas de custo semanal de internet (R$ 22,50) e energia (R$ 1,53) por integrante, têm-se um custo semanal de infraestrutura de  R$ 264,36 por integrante.
 
-## 3. Definição do orçamento inicial estimado
+<!-- ## 3. Definição do orçamento inicial estimado
 
-&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 17 semanas é de R$ 102.387,20.
+&emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 17 semanas é de R$ 102.387,20. -->
 
-## 4. Planilha de custos
+## 3. Planilha de custos
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRILvIU1GH3WopFw-HqKkzPCfT3uXRwpFWKURi99V6jNi6qUM6RIjYOyYvdnKlO3NgPoiUJJDjTYcD7/pubhtml?widget=true&amp;headers=false" width="100%" height="300"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRILvIU1GH3WopFw-HqKkzPCfT3uXRwpFWKURi99V6jNi6qUM6RIjYOyYvdnKlO3NgPoiUJJDjTYcD7/pubhtml?widget=true&amp;headers=false" width="100%" height="350"></iframe>
 
 ## Referências
 
