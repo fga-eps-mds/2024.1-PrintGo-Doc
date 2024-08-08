@@ -34,8 +34,9 @@ nav:
       - semana 4: andamento/semana4.md
       - Semana 5: andamento/semana5.md
       - Semana 6: andamento/semana6.md
-    # - Sprints:
-    #   - Sprint 1:  {ADICIONA AQUI O DOCUMENTO DA SPRINT 1 E TIRA O COMENTARIO}
+    - Sprints:
+      - Sprint 1: andamento/sprint1.md
+      - Sprint 2: andamento/sprint2.md
     
   # - Atas de Reunião:
   #   - Reuniões:
