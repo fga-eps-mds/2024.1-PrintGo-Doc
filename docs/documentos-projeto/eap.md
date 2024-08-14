@@ -21,10 +21,11 @@ O diagrama também pode ser acessado através desse [link](https://www.figma.com
 
 ## 4. Versionamento
 
-| **Data**   | **Descrição**                             | **Autor(es)**             |
-| ---------- | --------------------                      | ------------------------- |
-| 11/07/2024 | Criação da v1 do diagrama                 | Eliseu Kadesh, Caio Lamego, Matheus Brant |
-| 11/07/2024 | Criação da v1 do documento                | Eliseu Kadesh              |
-| 14/07/2024 | Adição das User Stories ao diagrama       | Eliseu Kadesh              |
-| 16/07/2024 | Corrigindo as User Stories no diagrama    | Eliseu Kadesh              |
-| 21/07/2024 | Atualizando as releases e User Stories    | Eliseu Kadesh              |
+| **Data**    | **Descrição**                                    | **Autor(es)**             |
+| ---------- | --------------------                             | ------------------------- |
+| 11/07/2024 | Criação da v1 do diagrama                        | Eliseu Kadesh, Caio Lamego, Matheus Brant |
+| 11/07/2024 | Criação da v1 do documento                       | Eliseu Kadesh              |
+| 14/07/2024 | Adição das User Stories ao diagrama              | Eliseu Kadesh              |
+| 16/07/2024 | Corrigindo as User Stories no diagrama           | Eliseu Kadesh              |
+| 21/07/2024 | Atualizando as releases e User Stories           | Eliseu Kadesh              |
+| 12/08/2024 | Corrigindo o diagrama conforme o feedback da R1  | Eliseu Kadesh              |
