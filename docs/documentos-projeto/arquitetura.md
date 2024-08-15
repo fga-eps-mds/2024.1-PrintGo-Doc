@@ -12,12 +12,13 @@ O objetivo deste documento é fornecer uma visão clara e compreensiva da estrut
 
 A arquitetura de microsserviços é uma abordagem onde o sistema é dividido em pequenos serviços independentes, cada um responsável por uma tarefa específica. Esses serviços são desenvolvidos, implantados e escalados de forma independente, o que aumenta a flexibilidade, a capacidade de resposta às mudanças e a escalabilidade do sistema. Cada microsserviço possui seu próprio banco de dados e se comunica com outros serviços através de APIs RESTful.
 
-O sistema possui três microsserviços:
+O sistema possui os seguintes microsserviços:
 
-- User: Responsável por gerenciar usuários da aplicação.
-- Printer: Realiza o gerenciamento de impressoras e impressões.
-- Occurrence: Gerencia ocorrências.
-- Contract: Gerencia dados de contratos.
+- Printer: Responsável por gerenciar as impressoras e padrões de impressoras. Monitora a quantidade de impressões dos equipamentos cadastrados via SNMP e gera relatórios com os dados coletados.
+- Contract: Armazena dados dos contratos de aluguel de equipamentos.
+- User: Armazena dados de usuários e gerencia tokens de autenticação.
+
+Os microsserviços podem comunicar entre si usando suas interfaces HTTP.
 
 #### Interface de Usuário
 
@@ -37,15 +38,17 @@ O diagrama de arquitetura apresentado a seguir ilustra a estrutura do sistema:
 
 #### React
 
-ReactJS é uma biblioteca JavaScript amplamente utilizada para criar interfaces de usuário interativas em aplicações web e móveis. Ele simplifica o desenvolvimento ao dividir a interface em componentes reutilizáveis e oferece uma maneira eficiente de atualizar e renderizar elementos na tela, proporcionando uma experiência de usuário fluida e responsiva.
+ReactJS é uma biblioteca JavaScript amplamente utilizada para criar interfaces de usuário interativas em aplicações web e móveis. Ele simplifica o desenvolvimento ao dividir a interface em componentes reutilizáveis e oferece uma maneira eficiente de atualizar e renderizar elementos na tela, proporcionando uma experiência de usuário fluida e responsiva. O React é utilizado no front-end do projeto.
 
 #### NodeJS
 
-Node.js é uma plataforma de backend baseada em JavaScript, ideal para construir serviços eficientes e escaláveis. Ele permite operações assíncronas e não bloqueantes, facilitando a construção de APIs RESTful e integração com bancos de dados, adequando-se bem à arquitetura de microsserviços moderna.
+Node.js é uma plataforma de backend baseada em JavaScript, ideal para construir serviços eficientes e escaláveis. Ele permite operações assíncronas e não bloqueantes, facilitando a construção de APIs RESTful e integração com bancos de dados, adequando-se bem à arquitetura de microsserviços moderna. No projeto utilizamos o Node com Typescript nos microsserviços e no API Gateway.
 
-#### PostgreSQL
+#### PostgreSQL e Prisma
 
 PostgreSQL é um sistema de banco de dados relacional de código aberto conhecido por sua confiabilidade e robustez. Ele suporta consultas complexas, transações seguras e oferece recursos avançados como indexação eficiente e suporte a tipos de dados variados. É amplamente utilizado em aplicações que requerem armazenamento estruturado e confiável de dados.
+
+Prisma é uma ferramenta de ORM (Object-Relational Mapping) que facilita a interação entre a aplicação e o banco de dados. Com Prisma, é possível realizar consultas, atualizações, e outras operações de banco de dados sem que seja necessário escrever nada em SQL.
 
 ## 3. Visão de dados
 
@@ -198,3 +201,4 @@ Esses diagramas são úteis para identificar e analisar as dependências entre d
 | 22/07/2024 | Corrige diagrama e serviços | Lucas Braun |
 | 26/07/2024 | Adiciona DLD's | Lucas Braun |
 | 28/07/2024 | Adiciona diagramas de pacotes | Lucas Braun |
+| 10/08/2024 | Altera diagrama e melhora descrição dos serviços e tecnologias | Lucas Braun |
