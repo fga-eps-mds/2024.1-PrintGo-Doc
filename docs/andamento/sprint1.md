@@ -12,7 +12,7 @@
 - Terminar a documentação para a Release 1;
 - Montar a apresentação da Release 1;
 - Realizar deploy da Release 1;
-- 
+
 ## 2. Atividades da Sprint
 | Tarefa | Responsáveis |
 |---|---|
