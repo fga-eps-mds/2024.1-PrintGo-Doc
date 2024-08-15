@@ -61,6 +61,9 @@
 &emsp;&emsp;Considerando as estimativas de custos feitas, o orçamento inicial total estimado para o projeto em 17 semanas é de R$ 102.387,20. -->
 
 ## 3. Planilha de custos
+**Nota:**  
+1 - Semana 12 houve a saída oficialmente de um integrante da equipe.  
+2 - Semana 13 houve adição de dois integrantes na equipe.  
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRILvIU1GH3WopFw-HqKkzPCfT3uXRwpFWKURi99V6jNi6qUM6RIjYOyYvdnKlO3NgPoiUJJDjTYcD7/pubhtml?widget=true&amp;headers=false" width="100%" height="350"></iframe>
 
