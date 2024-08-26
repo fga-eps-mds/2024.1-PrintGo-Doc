@@ -26,6 +26,7 @@ nav:
     - Plano de Comunicação: plano-monitoramento/comunicacao.md
     - Plano de Custos: plano-monitoramento/plano-custos.md
     - Plano de Riscos: plano-monitoramento/plano-riscos.md
+    - Plano de Qualidade: plano-monitoramento/plano-qualidade.md
   - Andamento:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
