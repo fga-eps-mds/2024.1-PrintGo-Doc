@@ -61,19 +61,18 @@ Exemplo:
 
 &emsp;&emsp;O repositório de documentação é um repositório separado dos repositórios de código fonte, que contém a documentação do projeto. A política de branches para o repositório de documentação é a mesma dos outros repositórios, com exceção da branch [develop](#develop) que não existe.
 
-## 2. Política de issues
-Para criar uma nova issue, um padrão deve ser seguido para dar o nome a issue:
+## 2. Template de issues
 
-    [tipo] - Nome da issue
+Foram criadas os seguintes templates de issues:
 
-- `[tipo]` será o tipo da issue, podendo ser:
-    - `Feature` - Para novas funcionalidades;
-    - `Bug` - Para correção de bugs;
-    - `Docs` - Para documentação.
+**Em repositórios de código**:
 
-- `Nome da issue` é o nome da issue que será criada.
+- Bug Report (Issue para reportar um bug);
+- Feature (Issue para uma nova feature relacionada a uma história de usuário);
 
-**Importante:** O nome da issue deve descrever de forma clara e objetiva o que será feito e a descrição mais completa deverá ficar no corpo da issue.
+**No repositório de documentação**:
+
+- História de Usuário (Issue para descrever uma história de usuário)
 
 ## 3. Política de commits
 O padrão de commits a ser seguido é o [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), além das seguintes regras:
@@ -111,30 +110,29 @@ Outro exemplo fechando uma issue:
 
 ## 4. Política de Pull Requests
 
-&emsp;&emsp;Para a criação de um Pull Request (PR), um padrão deve ser seguido para dar o nome ao PR:
+&emsp;&emsp;Para a criação de um Pull Request (PR), deve ser seguido o template já criado nos repositórios:
 
-    [tipo] - Nome da issue que está sendo corrigida
+      ## Qual o tipo do PR?
 
-- `[tipo]` será o tipo do PR, podendo ser:
-    - `Feature` - Para novas funcionalidades;
-    - `Bug` - Para correção de bugs;
-    - `Docs` - Para documentação.
+      - [ ] Refactor
+      - [ ] Feature
+      - [ ] Bug Fix
+      - [ ] Otimização
+      - [ ] Documentação
 
-- `Nome da issue` é o nome da issue que está sendo trabalhada.
+      ## Descrição
 
-&emsp;&emsp;Além disso, o corpo do PR deve conter uma descrição clara e objetiva do que foi feito, além de referenciar a issue trabalhada indicando que será fechada:
+      ## Issues relacionadas
 
-> Closes: #[número da issue]
-> Fixes: #[número da issue]
-Exemplo de PR:
-
-    [Docs] - Criar Guia de Contribuição
-
-    Criação do guia de contribuição para orientar os membros da equipe sobre as práticas e políticas de contribuição ao projeto.
-
-    Closes: #3
+      - Related Issue #
+      - closes #
 
 
+      ## Testes adicionados ou atualizados?
+
+      - [ ] Sim;
+      - [ ] Não, porque: **Inclua aqui o motivo de não ter incluido testes**;
+      - [ ] Preciso de ajuda para implementar os testes;
 
 ## Versionamento
 
