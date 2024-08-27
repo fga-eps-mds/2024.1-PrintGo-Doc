@@ -15,6 +15,7 @@ nav:
   - Home:
     - Início: index.md
     - Guia de Contribuição: inicio/guia_contribuicao.md
+    - Código de Conduta: inicio/codigo-conduta.md
   - Visão do Produto:
     - Lean Inception: visaoproduto/VisaoDoProduto.md
   - Documentos do Projeto:
