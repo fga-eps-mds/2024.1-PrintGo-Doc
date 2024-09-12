@@ -1,0 +1,2074 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../eap/">
+      
+      
+        <link rel="next" href="../guia_de_estilo/">
+      
+      
+      <link rel="icon" href="../../assets/logo/logoPrintGo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Arquitetura - PrintGO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#arquitetura" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="PrintGO" class="md-header__button md-logo" aria-label="PrintGO" data-md-component="logo">
+      
+  <img src="../../assets/logo/logoPrintGo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PrintGO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Arquitetura
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2024.1-PrintGo-Doc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-PrintGo-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../visaoproduto/VisaoDoProduto/" class="md-tabs__link">
+          
+  
+  Visão do Produto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../metodologias/" class="md-tabs__link">
+          
+  
+  Documentos do Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../plano-monitoramento/comunicacao/" class="md-tabs__link">
+          
+  
+  Plano e Monitoramento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../andamento/semana1/" class="md-tabs__link">
+          
+  
+  Andamento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PrintGO" class="md-nav__button md-logo" aria-label="PrintGO" data-md-component="logo">
+      
+  <img src="../../assets/logo/logoPrintGo.svg" alt="logo">
+
+    </a>
+    PrintGO
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2024.1-PrintGo-Doc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-PrintGo-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inicio/guia_contribuicao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inicio/codigo-conduta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de Conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visaoproduto/VisaoDoProduto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentos do Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentos do Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Arquitetura
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Arquitetura
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2. Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes" class="md-nav__link">
+    2.1. Componentes
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-de-usuario" class="md-nav__link">
+    Interface de Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-gateway" class="md-nav__link">
+    API Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-arquitetura" class="md-nav__link">
+    2.2. Diagrama de Arquitetura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-tecnologias" class="md-nav__link">
+    2.3. Tecnologias
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react" class="md-nav__link">
+    React
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    NodeJS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-e-prisma" class="md-nav__link">
+    PostgreSQL e Prisma
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-visao-de-dados" class="md-nav__link">
+    3. Visão de dados
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Visão de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelo-entidade-relacionamento-mer" class="md-nav__link">
+    Modelo Entidade-Relacionamento (MER)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-logico-de-dados-dld" class="md-nav__link">
+    Diagrama Lógico de Dados (DLD)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-printer-service" class="md-nav__link">
+    3.1. Printer Service
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Printer Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mer" class="md-nav__link">
+    MER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld" class="md-nav__link">
+    DLD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-contract-service" class="md-nav__link">
+    3.2. Contract Service
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. Contract Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mer_1" class="md-nav__link">
+    MER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld_1" class="md-nav__link">
+    DLD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pacotes" class="md-nav__link">
+    4. Pacotes
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Pacotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-diagrama-de-pacotes" class="md-nav__link">
+    4.1. Diagrama de Pacotes
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1. Diagrama de Pacotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#front-end" class="md-nav__link">
+    Front-end
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-end-microsservico" class="md-nav__link">
+    Back-end - Microsserviço
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencias-bibliograficas" class="md-nav__link">
+    5. Referências Bibliográficas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-versionamento" class="md-nav__link">
+    6. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guia_de_estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identidade Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plano e Monitoramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Plano e Monitoramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-riscos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Riscos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/plano-qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plano-monitoramento/evm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Andamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Andamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    semana 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Atas de Reunião
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas de Reunião
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/03-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 03/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/10-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 10/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/17-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 17/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/24-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 24/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    1. Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-representacao-arquitetural" class="md-nav__link">
+    2. Representação Arquitetural
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Representação Arquitetural">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-componentes" class="md-nav__link">
+    2.1. Componentes
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsservicos" class="md-nav__link">
+    Microsserviços
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interface-de-usuario" class="md-nav__link">
+    Interface de Usuário
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-gateway" class="md-nav__link">
+    API Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-diagrama-de-arquitetura" class="md-nav__link">
+    2.2. Diagrama de Arquitetura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-tecnologias" class="md-nav__link">
+    2.3. Tecnologias
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. Tecnologias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#react" class="md-nav__link">
+    React
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    NodeJS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-e-prisma" class="md-nav__link">
+    PostgreSQL e Prisma
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-visao-de-dados" class="md-nav__link">
+    3. Visão de dados
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Visão de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelo-entidade-relacionamento-mer" class="md-nav__link">
+    Modelo Entidade-Relacionamento (MER)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-logico-de-dados-dld" class="md-nav__link">
+    Diagrama Lógico de Dados (DLD)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-printer-service" class="md-nav__link">
+    3.1. Printer Service
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1. Printer Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mer" class="md-nav__link">
+    MER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld" class="md-nav__link">
+    DLD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-contract-service" class="md-nav__link">
+    3.2. Contract Service
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2. Contract Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mer_1" class="md-nav__link">
+    MER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dld_1" class="md-nav__link">
+    DLD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-pacotes" class="md-nav__link">
+    4. Pacotes
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Pacotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-diagrama-de-pacotes" class="md-nav__link">
+    4.1. Diagrama de Pacotes
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1. Diagrama de Pacotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#front-end" class="md-nav__link">
+    Front-end
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-end-microsservico" class="md-nav__link">
+    Back-end - Microsserviço
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencias-bibliograficas" class="md-nav__link">
+    5. Referências Bibliográficas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-versionamento" class="md-nav__link">
+    6. Versionamento
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="arquitetura">Arquitetura</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<p>O objetivo deste documento é fornecer uma visão clara e compreensiva da estrutura e dos componentes do sistema, incluindo suas interações e dependências, bem como as decisões de design que orientaram sua criação.</p>
+<h2 id="2-representacao-arquitetural">2. Representação Arquitetural</h2>
+<h3 id="21-componentes">2.1. Componentes</h3>
+<h4 id="microsservicos">Microsserviços</h4>
+<p>A arquitetura de microsserviços é uma abordagem onde o sistema é dividido em pequenos serviços independentes, cada um responsável por uma tarefa específica. Esses serviços são desenvolvidos, implantados e escalados de forma independente, o que aumenta a flexibilidade, a capacidade de resposta às mudanças e a escalabilidade do sistema. Cada microsserviço possui seu próprio banco de dados e se comunica com outros serviços através de APIs RESTful.</p>
+<p>O sistema possui os seguintes microsserviços:</p>
+<ul>
+<li>Printer: Responsável por gerenciar as impressoras e padrões de impressoras. Monitora a quantidade de impressões dos equipamentos cadastrados via SNMP e gera relatórios com os dados coletados.</li>
+<li>Contract: Armazena dados dos contratos de aluguel de equipamentos.</li>
+<li>User: Armazena dados de usuários e gerencia tokens de autenticação.</li>
+</ul>
+<p>Os microsserviços podem comunicar entre si usando suas interfaces HTTP.</p>
+<h4 id="interface-de-usuario">Interface de Usuário</h4>
+<p>A interface de usuário para o sistema será uma interface web, acessível através de navegadores modernos. A escolha de uma interface web traz vários benefícios, incluindo acessibilidade, facilidade de distribuição e compatibilidade com diversos dispositivos.</p>
+<h4 id="api-gateway">API Gateway</h4>
+<p>O API Gateway é um componente crucial na arquitetura de microsserviços, atuando como um ponto de entrada único para todas as chamadas de API feitas aos diversos microsserviços. O API Gateway recebe todas as requisições de clientes e as roteia para o microsserviço apropriado utilizando regras de roteamento configuradas para determinar para qual serviço a requisição deve ser encaminhada.</p>
+<h3 id="22-diagrama-de-arquitetura">2.2. Diagrama de Arquitetura</h3>
+<p>O diagrama de arquitetura apresentado a seguir ilustra a estrutura do sistema:</p>
+<p><img alt="Diagram de Arquitetura" src="../../assets/diagramas/arquitetura.png" /></p>
+<h3 id="23-tecnologias">2.3. Tecnologias</h3>
+<h4 id="react">React</h4>
+<p>ReactJS é uma biblioteca JavaScript amplamente utilizada para criar interfaces de usuário interativas em aplicações web e móveis. Ele simplifica o desenvolvimento ao dividir a interface em componentes reutilizáveis e oferece uma maneira eficiente de atualizar e renderizar elementos na tela, proporcionando uma experiência de usuário fluida e responsiva. O React é utilizado no front-end do projeto.</p>
+<h4 id="nodejs">NodeJS</h4>
+<p>Node.js é uma plataforma de backend baseada em JavaScript, ideal para construir serviços eficientes e escaláveis. Ele permite operações assíncronas e não bloqueantes, facilitando a construção de APIs RESTful e integração com bancos de dados, adequando-se bem à arquitetura de microsserviços moderna. No projeto utilizamos o Node com Typescript nos microsserviços e no API Gateway.</p>
+<h4 id="postgresql-e-prisma">PostgreSQL e Prisma</h4>
+<p>PostgreSQL é um sistema de banco de dados relacional de código aberto conhecido por sua confiabilidade e robustez. Ele suporta consultas complexas, transações seguras e oferece recursos avançados como indexação eficiente e suporte a tipos de dados variados. É amplamente utilizado em aplicações que requerem armazenamento estruturado e confiável de dados.</p>
+<p>Prisma é uma ferramenta de ORM (Object-Relational Mapping) que facilita a interação entre a aplicação e o banco de dados. Com Prisma, é possível realizar consultas, atualizações, e outras operações de banco de dados sem que seja necessário escrever nada em SQL.</p>
+<h2 id="3-visao-de-dados">3. Visão de dados</h2>
+<h3 id="modelo-entidade-relacionamento-mer">Modelo Entidade-Relacionamento (MER)</h3>
+<p>Um Modelo Entidade-Relacionamento (MER) é uma representação que descreve a estrutura de um banco de dados. Ele utiliza três componentes principais: entidades, que representam objetos ou conceitos; atributos, que são as propriedades dessas entidades; e relacionamentos, que mostram como as entidades estão associadas entre si. O MER facilita a compreensão e o planejamento do banco de dados antes de sua implementação, garantindo que todas as necessidades de dados e suas interações sejam consideradas.</p>
+<p>Em uma arquitetura de microsserviços, cada serviço possui seu próprio banco de dados, mas pode referenciar dados de outros serviços usando IDs ou chaves simbólicas, garantindo a independência e a comunicação via APIs.</p>
+<h3 id="diagrama-logico-de-dados-dld">Diagrama Lógico de Dados (DLD)</h3>
+<p>O Diagrama Lógico de Dados (DLD) é uma representação gráfica detalhada que descreve a estrutura de um banco de dados em termos de tabelas e suas relações. Ele é uma evolução do Modelo Entidade-Relacionamento (MER) e visa fornecer uma visão mais específica e técnica da organização dos dados, facilitando a implementação no banco de dados físico.</p>
+<h3 id="31-printer-service">3.1. Printer Service</h3>
+<h4 id="mer">MER</h4>
+<p>Entidades:</p>
+<ul>
+<li><strong>RELATORIO</strong></li>
+<li><strong>RELATORIO_LOCADORA</strong></li>
+<li><strong>ROTINA_SNMP</strong></li>
+<li><strong>IMPRESSORA</strong></li>
+<li><strong>PADRAO</strong></li>
+</ul>
+<p>Atributos:</p>
+<ul>
+<li>
+<p><strong>RELATORIO</strong></p>
+<ul>
+<li><ins>id</ins></li>
+<li>impressoraId</li>
+<li>contadorPB</li>
+<li>contadorPBDiff</li>
+<li>contadorCor</li>
+<li>contadorCorDiff</li>
+<li>ultimoResultado</li>
+<li>resultadoAtual</li>
+<li>ultimaAtualizacao</li>
+</ul>
+</li>
+<li>
+<p><strong>RELATORIO_LOCADORA</strong></p>
+<ul>
+<li><ins>id</ins></li>
+<li>impressoraId</li>
+<li>contadorPB</li>
+<li>contadorCor</li>
+<li>contadorTotal</li>
+</ul>
+</li>
+<li>
+<p><strong>ROTINA_SNMP</strong></p>
+<ul>
+<li><ins>id</ins></li>
+<li>localizacao</li>
+<li>dataCriado</li>
+<li>dataUltimoUpdate</li>
+<li>cronExpression</li>
+<li>ativo</li>
+<li>cidadeTodas</li>
+<li>regionalTodas</li>
+<li>unidadeTodas</li>
+</ul>
+</li>
+<li>
+<p><strong>IMPRESSORA</strong></p>
+<ul>
+<li><ins>id</ins></li>
+<li>numContrato</li>
+<li>numSerie</li>
+<li>enderecoIp</li>
+<li>estaNaRede</li>
+<li>dataInstalacao</li>
+<li>dataRetirada</li>
+<li>ativo</li>
+<li>contadorInstalacaoPB</li>
+<li>contadorInstalacaoCor</li>
+<li>contadorAtualPB</li>
+<li>contadorAtualCor</li>
+<li>contadorRetiradaPB</li>
+<li>contadorRetiradaCor</li>
+<li>localizacao</li>
+<li>padraoId</li>
+</ul>
+</li>
+<li>
+<p><strong>PADRAO</strong></p>
+<ul>
+<li><ins>id</ins></li>
+<li>nome</li>
+<li>modelo</li>
+<li>colorido</li>
+<li>oidModelo</li>
+<li>oidNumeroSerie</li>
+<li>oidFirmware</li>
+<li>oidTempoAtivo</li>
+<li>oidDigitalizacoes</li>
+<li>oidCopiasPB</li>
+<li>oidCopiasCor</li>
+<li>oidTotalGeral</li>
+<li>ativo</li>
+</ul>
+</li>
+</ul>
+<p>Relacionamentos:</p>
+<ul>
+<li>
+<p><strong>RELATORIO</strong> <strong><em>pertence</em></strong> a uma <strong>IMPRESSORA</strong></p>
+<ul>
+<li>Um relatório pertence a apenas uma impressora, mas uma impressora pode ter vários relatórios.</li>
+<li>Cardinalidade 1:n</li>
+</ul>
+</li>
+<li>
+<p><strong>RELATORIO_LOCADORA</strong> <strong><em>pertence</em></strong> a uma <strong>IMPRESSORA</strong></p>
+<ul>
+<li>Um relatório de locadora pertence a apenas uma impressora, mas uma impressora pode ter vários relatórios de locadora.</li>
+<li>Cardinalidade 1:n</li>
+</ul>
+</li>
+<li>
+<p><strong>IMPRESSORA</strong> <strong><em>pertence</em></strong> a um <strong>PADRAO</strong></p>
+<ul>
+<li>Uma impressora pertence a apenas um padrão, mas um único padrão pode ter várias impressoras.</li>
+<li>Cardinalidade 1:n</li>
+</ul>
+</li>
+</ul>
+<h4 id="dld">DLD</h4>
+<p><img alt="dld-printer" src="../../assets/diagramas/dados/printer.png" /></p>
+<h3 id="32-contract-service">3.2. Contract Service</h3>
+<h4 id="mer_1">MER</h4>
+<p>Entidades:</p>
+<ul>
+<li><strong>CONTRATO</strong></li>
+</ul>
+<p>Atributos:</p>
+<ul>
+<li><strong>CONTRATO</strong><ul>
+<li><ins>id</ins></li>
+<li>numero</li>
+<li>nomeGestor</li>
+<li>descricao</li>
+<li>dataInicio</li>
+<li>dataTermino</li>
+<li>ativo</li>
+<li>createdAt</li>
+<li>updatedAt</li>
+</ul>
+</li>
+</ul>
+<h4 id="dld_1">DLD</h4>
+<p><img alt="dld-contract" src="../../assets/diagramas/dados/contract.png" /></p>
+<h2 id="4-pacotes">4. Pacotes</h2>
+<p>Um diagrama de pacotes é uma ferramenta visual usada na engenharia de software para representar a organização de um sistema em termos de módulos e suas interações. Ele agrupa componentes relacionados, como classes e interfaces, dentro de "pacotes", ajudando a estruturar o sistema de forma mais clara e organizada.</p>
+<p>Esses diagramas são úteis para identificar e analisar as dependências entre diferentes partes do sistema, promovendo um design mais coeso e menos acoplado. Além disso, eles facilitam a comunicação entre os membros da equipe de desenvolvimento, fornecendo uma visão clara da arquitetura do sistema.</p>
+<h3 id="41-diagrama-de-pacotes">4.1. Diagrama de Pacotes</h3>
+<h4 id="front-end">Front-end</h4>
+<p><img alt="pacotes-front" src="../../assets/diagramas/pacotes-front.png" /></p>
+<h4 id="back-end-microsservico">Back-end - Microsserviço</h4>
+<p><img alt="pacotes-back" src="../../assets/diagramas/pacotes-back.png" /></p>
+<h2 id="5-referencias-bibliograficas">5. Referências Bibliográficas</h2>
+<blockquote>
+<p>About PostgreSQL. Disponível em: <a href="https://www.postgresql.org/about/">https://www.postgresql.org/about/</a></p>
+<p>What is Node.js. Disponível em: <a href="https://developer.oracle.com/learn/technical-articles/what-is-node-js">https://developer.oracle.com/learn/technical-articles/what-is-node-js</a></p>
+<p>React. Disponível em: <a href="https://react.dev/">https://react.dev/</a></p>
+<p>IBM - O que são microsserviços? Disponível em <a href="https://www.ibm.com/br-pt/topics/microservices">https://www.ibm.com/br-pt/topics/microservices</a></p>
+<p>Diagrama de Pacotes: Definição, Componentes e Exemplos. Disponível em: <a href="https://gitmind.com/pt/diagrama-de-pacotes.html">https://gitmind.com/pt/diagrama-de-pacotes.html</a></p>
+</blockquote>
+<h2 id="6-versionamento">6. Versionamento</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Autor(es)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">14/07/2024</td>
+<td>Criação do Documento</td>
+<td>Lucas Braun</td>
+</tr>
+<tr>
+<td style="text-align: center;">22/07/2024</td>
+<td>Corrige diagrama e serviços</td>
+<td>Lucas Braun</td>
+</tr>
+<tr>
+<td style="text-align: center;">26/07/2024</td>
+<td>Adiciona DLD's</td>
+<td>Lucas Braun</td>
+</tr>
+<tr>
+<td style="text-align: center;">28/07/2024</td>
+<td>Adiciona diagramas de pacotes</td>
+<td>Lucas Braun</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/08/2024</td>
+<td>Altera diagrama e melhora descrição dos serviços e tecnologias</td>
+<td>Lucas Braun</td>
+</tr>
+<tr>
+<td style="text-align: center;">12/09/2024</td>
+<td>Adiciona novas tabelas do Printer</td>
+<td>Lucas Braun</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

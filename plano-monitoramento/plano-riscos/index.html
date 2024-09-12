@@ -1,0 +1,1996 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../plano-custos/">
+      
+      
+        <link rel="next" href="../plano-qualidade/">
+      
+      
+      <link rel="icon" href="../../assets/logo/logoPrintGo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.8">
+    
+    
+      
+        <title>Plano de Riscos - PrintGO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plano-de-gestao-de-riscos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="PrintGO" class="md-header__button md-logo" aria-label="PrintGO" data-md-component="logo">
+      
+  <img src="../../assets/logo/logoPrintGo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PrintGO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plano de Riscos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fga-eps-mds/2024.1-PrintGo-Doc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-PrintGo-Doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../visaoproduto/VisaoDoProduto/" class="md-tabs__link">
+          
+  
+  Visão do Produto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../documentos-projeto/metodologias/" class="md-tabs__link">
+          
+  
+  Documentos do Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../comunicacao/" class="md-tabs__link">
+          
+  
+  Plano e Monitoramento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../andamento/semana1/" class="md-tabs__link">
+          
+  
+  Andamento
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PrintGO" class="md-nav__button md-logo" aria-label="PrintGO" data-md-component="logo">
+      
+  <img src="../../assets/logo/logoPrintGo.svg" alt="logo">
+
+    </a>
+    PrintGO
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fga-eps-mds/2024.1-PrintGo-Doc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-PrintGo-Doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inicio/guia_contribuicao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inicio/codigo-conduta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Código de Conduta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visaoproduto/VisaoDoProduto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lean Inception
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentos do Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentos do Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentos-projeto/metodologias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentos-projeto/eap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentos-projeto/arquitetura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arquitetura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentos-projeto/guia_de_estilo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identidade Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plano e Monitoramento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Plano e Monitoramento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comunicacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Comunicação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-custos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Custos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Plano de Riscos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Riscos
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#categorias-de-risco" class="md-nav__link">
+    Categorias de Risco
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicoes" class="md-nav__link">
+    Definições
+  </a>
+  
+    <nav class="md-nav" aria-label="Definições">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probabilidade-e-impacto-dos-riscos" class="md-nav__link">
+    Probabilidade e Impacto dos Riscos
+  </a>
+  
+    <nav class="md-nav" aria-label="Probabilidade e Impacto dos Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probabilidade" class="md-nav__link">
+    Probabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impacto" class="md-nav__link">
+    Impacto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-probabilidade-x-impacto" class="md-nav__link">
+    Matriz de Probabilidade x Impacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#niveis-de-risco" class="md-nav__link">
+    Níveis de Risco
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificacao-dos-riscos" class="md-nav__link">
+    Identificação dos Riscos
+  </a>
+  
+    <nav class="md-nav" aria-label="Identificação dos Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#causa-e-efeito-dos-riscos" class="md-nav__link">
+    Causa e Efeito dos Riscos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medidas-de-prevencao-e-acao" class="md-nav__link">
+    Medidas de Prevenção e Ação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoramento-dos-riscos" class="md-nav__link">
+    Monitoramento dos Riscos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plano-qualidade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plano de Qualidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EVM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Andamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Andamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    semana 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/semana6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semana 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprints
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sprints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../andamento/sprint7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Atas de Reunião
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas de Reunião
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/03-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 03/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/10-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 10/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/17-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 17/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/24-04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reunião com POs dia 24/04/2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    Introdução
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#categorias-de-risco" class="md-nav__link">
+    Categorias de Risco
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicoes" class="md-nav__link">
+    Definições
+  </a>
+  
+    <nav class="md-nav" aria-label="Definições">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probabilidade-e-impacto-dos-riscos" class="md-nav__link">
+    Probabilidade e Impacto dos Riscos
+  </a>
+  
+    <nav class="md-nav" aria-label="Probabilidade e Impacto dos Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probabilidade" class="md-nav__link">
+    Probabilidade
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impacto" class="md-nav__link">
+    Impacto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-probabilidade-x-impacto" class="md-nav__link">
+    Matriz de Probabilidade x Impacto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#niveis-de-risco" class="md-nav__link">
+    Níveis de Risco
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificacao-dos-riscos" class="md-nav__link">
+    Identificação dos Riscos
+  </a>
+  
+    <nav class="md-nav" aria-label="Identificação dos Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#causa-e-efeito-dos-riscos" class="md-nav__link">
+    Causa e Efeito dos Riscos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medidas-de-prevencao-e-acao" class="md-nav__link">
+    Medidas de Prevenção e Ação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoramento-dos-riscos" class="md-nav__link">
+    Monitoramento dos Riscos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="plano-de-gestao-de-riscos">Plano de Gestão de Riscos</h1>
+<h2 id="introducao">Introdução</h2>
+<p>O planejamento de riscos é uma fase essencial no planejamento de qualquer projeto. Identificar os possíveis riscos permite criar estratégias para reduzir seus impactos. Estes riscos podem influenciar o planejamento, o cronograma e os custos, e podem estar associados a diversos fatores como orçamento, prazos, equipe, recursos, clientes e requisitos. Este plano visa identificar, analisar e monitorar esses riscos de forma eficaz.</p>
+<h3 id="categorias-de-risco">Categorias de Risco</h3>
+<p>Os riscos foram classificados nas seguintes categorias:</p>
+<ul>
+<li>Externo</li>
+<li>Gerencial</li>
+<li>Organizacional</li>
+<li>Técnico</li>
+</ul>
+<h2 id="definicoes">Definições</h2>
+<h3 id="probabilidade-e-impacto-dos-riscos">Probabilidade e Impacto dos Riscos</h3>
+<h4 id="probabilidade">Probabilidade</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Porcentagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Muito baixa</td>
+<td style="text-align: center;">0% - 19%</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Baixa</td>
+<td style="text-align: center;">20% - 39%</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Média</td>
+<td style="text-align: center;">40% - 59%</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">60% - 79%</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Muito alta</td>
+<td style="text-align: center;">80% - 100%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="impacto">Impacto</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th style="text-align: center;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Muito baixo</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Baixo</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Médio</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Alto</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Muito alto</td>
+</tr>
+</tbody>
+</table>
+<h3 id="matriz-de-probabilidade-x-impacto">Matriz de Probabilidade x Impacto</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Probabilidade / Impacto</th>
+<th style="text-align: center;">Muito baixo</th>
+<th style="text-align: center;">Baixo</th>
+<th style="text-align: center;">Médio</th>
+<th style="text-align: center;">Alto</th>
+<th style="text-align: center;">Muito alto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Muito baixa</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">Baixa</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td style="text-align: center;">Média</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr>
+<td style="text-align: center;">Muito alta</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">25</td>
+</tr>
+</tbody>
+</table>
+<h3 id="niveis-de-risco">Níveis de Risco</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nível</th>
+<th style="text-align: center;">Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1 - 5</td>
+<td style="text-align: center;">Baixo</td>
+</tr>
+<tr>
+<td style="text-align: center;">6 - 12</td>
+<td style="text-align: center;">Médio</td>
+</tr>
+<tr>
+<td style="text-align: center;">15 - 25</td>
+<td style="text-align: center;">Alto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identificacao-dos-riscos">Identificação dos Riscos</h2>
+<h3 id="causa-e-efeito-dos-riscos">Causa e Efeito dos Riscos</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Risco</th>
+<th style="text-align: center;">Causa</th>
+<th style="text-align: center;">Efeito</th>
+<th style="text-align: center;">Categoria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R01</td>
+<td style="text-align: center;">Falta de experiência com as tecnologias</td>
+<td style="text-align: center;">Baixa qualidade do produto e atrasos nas entregas</td>
+<td style="text-align: center;">Técnico</td>
+</tr>
+<tr>
+<td style="text-align: center;">R02</td>
+<td style="text-align: center;">Problemas pessoais e carga de trabalho excessiva</td>
+<td style="text-align: center;">Redução da capacidade de entrega da equipe</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R03</td>
+<td style="text-align: center;">Desmotivação do integrante</td>
+<td style="text-align: center;">Acúmulo de atividades e impacto na produtividade</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R04</td>
+<td style="text-align: center;">Falta de comprometimento e comunicação deficiente</td>
+<td style="text-align: center;">Falta de alinhamento e eficiência na equipe</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R05</td>
+<td style="text-align: center;">Planejamento inadequado e estimativas erradas</td>
+<td style="text-align: center;">Alteração no cronograma e insatisfação do cliente</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R06</td>
+<td style="text-align: center;">Compromissos adicionais e atividades externas</td>
+<td style="text-align: center;">Problemas de integração e baixa participação nas reuniões</td>
+<td style="text-align: center;">Organizacional</td>
+</tr>
+<tr>
+<td style="text-align: center;">R07</td>
+<td style="text-align: center;">Interrupções na comunicação da plataforma</td>
+<td style="text-align: center;">Atrasos na tomada de decisões</td>
+<td style="text-align: center;">Externo</td>
+</tr>
+<tr>
+<td style="text-align: center;">R08</td>
+<td style="text-align: center;">Definição incorreta dos requisitos</td>
+<td style="text-align: center;">Baixa qualidade do produto e necessidade de retrabalho</td>
+<td style="text-align: center;">Técnico</td>
+</tr>
+<tr>
+<td style="text-align: center;">R09</td>
+<td style="text-align: center;">Mudanças nos requisitos do projeto</td>
+<td style="text-align: center;">Aumento de prazo, custos e insatisfação do cliente</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R10</td>
+<td style="text-align: center;">Problemas de saúde e falta de cuidado</td>
+<td style="text-align: center;">Sobrecarga para os outros membros da equipe</td>
+<td style="text-align: center;">Externo</td>
+</tr>
+<tr>
+<td style="text-align: center;">R11</td>
+<td style="text-align: center;">Falta de comprometimento do cliente e conflitos de agenda</td>
+<td style="text-align: center;">Aumento do retrabalho e dificuldades nas validações</td>
+<td style="text-align: center;">Externo</td>
+</tr>
+<tr>
+<td style="text-align: center;">R12</td>
+<td style="text-align: center;">Falta de revisões e deficiências técnicas</td>
+<td style="text-align: center;">Presença elevada de bugs e dificuldades na manutenção do código</td>
+<td style="text-align: center;">Técnico</td>
+</tr>
+<tr>
+<td style="text-align: center;">R13</td>
+<td style="text-align: center;">Problemas no processo de disponibilização do ambiente</td>
+<td style="text-align: center;">Risco de erros na implementação e insatisfação do cliente</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R14</td>
+<td style="text-align: center;">Reuniões prolongadas</td>
+<td style="text-align: center;">Redução da produtividade da equipe</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R15</td>
+<td style="text-align: center;">Má divisão das tarefas e falta de colaboração</td>
+<td style="text-align: center;">Conhecimento técnico concentrado e sobrecarga de trabalho</td>
+<td style="text-align: center;">Gerencial</td>
+</tr>
+<tr>
+<td style="text-align: center;">R16</td>
+<td style="text-align: center;">Desgaste natural e falta de manutenção</td>
+<td style="text-align: center;">Aumento dos custos e atrasos nas entregas</td>
+<td style="text-align: center;">Externo</td>
+</tr>
+<tr>
+<td style="text-align: center;">R17</td>
+<td style="text-align: center;">Falta de coordenação entre atividades</td>
+<td style="text-align: center;">Bloqueios no progresso de outras tarefas</td>
+<td style="text-align: center;">Organizacional</td>
+</tr>
+</tbody>
+</table>
+<h3 id="medidas-de-prevencao-e-acao">Medidas de Prevenção e Ação</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Risco</th>
+<th style="text-align: center;">Medida de Prevenção</th>
+<th style="text-align: center;">Ação a Ser Tomada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">R01</td>
+<td style="text-align: center;">Realização de treinamentos específicos</td>
+<td style="text-align: center;">Programação em pares para compartilhamento de conhecimento</td>
+</tr>
+<tr>
+<td style="text-align: center;">R02</td>
+<td style="text-align: center;">Manter a equipe motivada e ajustar a grade horária</td>
+<td style="text-align: center;">Reavaliar e redistribuir as atividades do projeto</td>
+</tr>
+<tr>
+<td style="text-align: center;">R03</td>
+<td style="text-align: center;">Incentivar a participação ativa dos integrantes</td>
+<td style="text-align: center;">Identificar e solucionar problemas individuais dos integrantes</td>
+</tr>
+<tr>
+<td style="text-align: center;">R04</td>
+<td style="text-align: center;">Garantir a participação de todos nas reuniões</td>
+<td style="text-align: center;">Reagendar reuniões conforme necessário</td>
+</tr>
+<tr>
+<td style="text-align: center;">R05</td>
+<td style="text-align: center;">Planejar de forma realista e revisar estimativas</td>
+<td style="text-align: center;">Ajustar as atividades e estimativas da sprint</td>
+</tr>
+<tr>
+<td style="text-align: center;">R06</td>
+<td style="text-align: center;">Criar uma planilha de horários detalhada</td>
+<td style="text-align: center;">Estabelecer pares para facilitar a execução das tarefas</td>
+</tr>
+<tr>
+<td style="text-align: center;">R07</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Utilizar outras plataformas de comunicação conforme planejado</td>
+</tr>
+<tr>
+<td style="text-align: center;">R08</td>
+<td style="text-align: center;">Definir a arquitetura de acordo com os requisitos do cliente</td>
+<td style="text-align: center;">Revisar e ajustar a arquitetura e as tecnologias utilizadas</td>
+</tr>
+<tr>
+<td style="text-align: center;">R09</td>
+<td style="text-align: center;">Estabelecer uma visão clara do produto</td>
+<td style="text-align: center;">Atualizar os requisitos e escopo do projeto conforme necessário</td>
+</tr>
+<tr>
+<td style="text-align: center;">R10</td>
+<td style="text-align: center;">Seguir recomendações de saúde</td>
+<td style="text-align: center;">Reavaliar a distribuição das tarefas entre a equipe</td>
+</tr>
+<tr>
+<td style="text-align: center;">R11</td>
+<td style="text-align: center;">Concordar sobre datas e horários das reuniões com o cliente</td>
+<td style="text-align: center;">Solicitar reagendamento das reuniões se necessário</td>
+</tr>
+<tr>
+<td style="text-align: center;">R12</td>
+<td style="text-align: center;">Implementar alta cobertura de testes e lint</td>
+<td style="text-align: center;">Identificar e refatorar componentes que impactam a qualidade</td>
+</tr>
+<tr>
+<td style="text-align: center;">R13</td>
+<td style="text-align: center;">Preparar o ambiente de testes com antecedência</td>
+<td style="text-align: center;">Revisar e melhorar o processo de disponibilização do ambiente</td>
+</tr>
+<tr>
+<td style="text-align: center;">R14</td>
+<td style="text-align: center;">Definir pautas e limites de tempo para reuniões</td>
+<td style="text-align: center;">Planejar reuniões presenciais para melhorar a produtividade</td>
+</tr>
+<tr>
+<td style="text-align: center;">R15</td>
+<td style="text-align: center;">Distribuir as tarefas de forma equilibrada entre os membros</td>
+<td style="text-align: center;">Reavaliar e redistribuir as tarefas conforme necessário</td>
+</tr>
+<tr>
+<td style="text-align: center;">R16</td>
+<td style="text-align: center;">Realizar manutenção periódica do equipamento</td>
+<td style="text-align: center;">Consertar ou substituir equipamentos conforme necessário</td>
+</tr>
+<tr>
+<td style="text-align: center;">R17</td>
+<td style="text-align: center;">Priorizar adequadamente as atividades</td>
+<td style="text-align: center;">Revisar e ajustar a priorização das atividades</td>
+</tr>
+</tbody>
+</table>
+<h2 id="monitoramento-dos-riscos">Monitoramento dos Riscos</h2>
+<p>O acompanhamento dos riscos é essencial durante o desenvolvimento de um projeto de software, uma vez que os riscos não são estáticos e podem mudar de nível ao longo do projeto. Para realizar esse monitoramento foi criada uma planilha para inserir a pontuação dos riscos para cada sprint.</p>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFZNWo-5ZMo5LQWoeti_hEhLKBpRaBYfn5nQtc-kN6Ow_ybp7xeQu6PR1-a75kM3V8rV0t48XrkXdJ/pubhtml?widget=true&amp;headers=false"
+ width="100%" height="300"></iframe>
+
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p>DevMedia. Gerência de riscos em desenvolvimento de software. Disponível em: https://www.devmedia.com.br/gerencia-de-riscos-em-desenvolvimento-de-software/28506. Acesso em: 13 mai 2023.</p>
+<p>Escritório de Projetos. Objetivo do Plano de gerenciamento dos riscos. Disponível em: https://escritoriodeprojetos.com.br/downloads/send/8-modelos/129-plano-de-gerenciamento-dos-riscos. Acesso em: 12 mai 2023.</p>
+<p>Isotani, Seiji; Rocha, Rafaela. Gestão de Riscos em Projetos de Software. Disponível em: https://edisciplinas.usp.br/pluginfile.php/3385127/mod_resource/content/1/Aula10-GerenciaProjeto-Riscos.pdf. Acesso em: 13 mai 2023.</p>
+<p>DNIT FGA-EPS-MDS. Plano de Riscos. Disponível em: https://fga-eps-mds.github.io/2023.2-Dnit-DOC/plano-monitoramento/plano-riscos/. Acesso em: [data de acesso].</p>
+</blockquote>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

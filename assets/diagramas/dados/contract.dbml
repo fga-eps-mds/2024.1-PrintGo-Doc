@@ -1,0 +1,13 @@
+// Arquivo usado no https://dbdiagram.io
+
+Table Contrato {
+  id          int       [pk, increment]
+  numero      varchar(50) [unique]
+  nomeGestor  varchar(255)
+  descricao   varchar(255)
+  dataInicio  datetime  [default: `now()`]
+  dataTermino datetime  [default: `now()`]
+  ativo       bool      [default: true]
+  createdAt   datetime  [default: `now()`]
+  updatedAt   datetime  [note: 'Atualizado automaticamente']
+}
