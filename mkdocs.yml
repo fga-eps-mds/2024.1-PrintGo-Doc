@@ -28,6 +28,7 @@ nav:
     - Plano de Custos: plano-monitoramento/plano-custos.md
     - Plano de Riscos: plano-monitoramento/plano-riscos.md
     - Plano de Qualidade: plano-monitoramento/plano-qualidade.md
+    - EVM: plano-monitoramento/evm.md
   - Andamento:
     - Pré-sprints: 
       - Semana 1: andamento/semana1.md
