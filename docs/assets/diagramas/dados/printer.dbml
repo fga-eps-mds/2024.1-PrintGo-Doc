@@ -35,4 +35,38 @@ Table Impressora {
   padraoId integer
 }
 
+Table Relatorio {
+  id                int         [pk, increment]
+  impressoraId      int         [unique]
+  contadorPB        int
+  contadorPBDiff    int
+  contadorCor       int
+  contadorCorDiff   int
+  ultimoResultado   int
+  resultadoAtual    int
+  ultimaAtualizacao datetime
+}
+
+Table RelatorioLocadora {
+  id                int         [pk, increment]
+  impressoraId      int         [unique]
+  contadorPB        int
+  contadorCor       int
+  contadorTotal     int
+}
+
+Table RotinaSnmp {
+  id                  int       [pk, increment]
+  localizacao         varchar
+  dataCriado          datetime  [default: `now()`]
+  dataUltimoUpdate    datetime
+  cronExpression      varchar
+  ativo               bool
+  cidadeTodas         bool
+  regionalTodas       bool
+  unidadeTodas        bool
+}
+
+Ref: Relatorio.impressoraId > Impressora.id
+Ref: RelatorioLocadora.impressoraId > Impressora.id
 Ref: Impressora.padraoId > Padrao.id

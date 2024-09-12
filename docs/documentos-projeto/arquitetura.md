@@ -68,35 +68,66 @@ O Diagrama Lógico de Dados (DLD) é uma representação gráfica detalhada que 
 
 Entidades:
 
-- EQUIPAMENTO
-- MODELO
+- **RELATORIO**
+- **RELATORIO_LOCADORA**
+- **ROTINA_SNMP**
+- **IMPRESSORA**
+- **PADRAO**
 
 Atributos:
 
-- IMPRESSORA
+- **RELATORIO**
+    - <ins>id</ins>
+    - impressoraId
+    - contadorPB
+    - contadorPBDiff
+    - contadorCor
+    - contadorCorDiff
+    - ultimoResultado
+    - resultadoAtual
+    - ultimaAtualizacao
+
+- **RELATORIO_LOCADORA**
+    - <ins>id</ins>
+    - impressoraId
+    - contadorPB
+    - contadorCor
+    - contadorTotal
+
+- **ROTINA_SNMP**
+    - <ins>id</ins>
+    - localizacao
+    - dataCriado
+    - dataUltimoUpdate
+    - cronExpression
+    - ativo
+    - cidadeTodas
+    - regionalTodas
+    - unidadeTodas
+
+- **IMPRESSORA**
     - <ins>id</ins>
     - numContrato
     - numSerie
     - enderecoIp
-    - estaNaRede 
+    - estaNaRede
     - dataInstalacao
-    - dataRetirada 
-    - ativo 
-    - contadorInstalacaoPB 
-    - contadorInstalacaoCor 
-    - contadorAtualPB 
-    - contadorAtualCor 
-    - contadorRetiradaPB 
-    - contadorRetiradaCor 
-    - localizacao 
-    - padraoId 
+    - dataRetirada
+    - ativo
+    - contadorInstalacaoPB
+    - contadorInstalacaoCor
+    - contadorAtualPB
+    - contadorAtualCor
+    - contadorRetiradaPB
+    - contadorRetiradaCor
+    - localizacao
+    - padraoId
 
-- PADRAO
+- **PADRAO**
     - <ins>id</ins>
     - nome
     - modelo
     - colorido
-    - ativo
     - oidModelo
     - oidNumeroSerie
     - oidFirmware
@@ -105,60 +136,46 @@ Atributos:
     - oidCopiasPB
     - oidCopiasCor
     - oidTotalGeral
-
+    - ativo
 
 Relacionamentos:
 
-- IMPRESSORA ***pertence*** a um MODELO
-    - Uma impressora pertence a apenas um modelo, mas um único modelo pode ter várias impressoras.
+- **RELATORIO** ***pertence*** a uma **IMPRESSORA**
+    - Um relatório pertence a apenas uma impressora, mas uma impressora pode ter vários relatórios.
+    - Cardinalidade 1:n
+
+- **RELATORIO_LOCADORA** ***pertence*** a uma **IMPRESSORA**
+    - Um relatório de locadora pertence a apenas uma impressora, mas uma impressora pode ter vários relatórios de locadora.
+    - Cardinalidade 1:n
+
+- **IMPRESSORA** ***pertence*** a um **PADRAO**
+    - Uma impressora pertence a apenas um padrão, mas um único padrão pode ter várias impressoras.
     - Cardinalidade 1:n
 
 #### DLD
 
 ![dld-printer](../assets/diagramas/dados/printer.png)
 
-### 3.2. User Service
+### 3.2. Contract Service
 
 #### MER
 
 Entidades:
 
-- USER
+- **CONTRATO**
 
 Atributos:
 
-- USER
-    - <ins>id</ins>
-    - email
-    - nome
-    - senha
-    - idUnidade
-    - resetPasswordToken
-    - resetPasswordExpires
-    - cargo
-
-#### DLD
-
-![dld-user](../assets/diagramas/dados/user.png)
-
-### 3.3. Contract Service
-
-#### MER
-
-Entidades:
-
-- CONTRATO
-
-Atributos:
-
-- CONTRATO:
+- **CONTRATO**
     - <ins>id</ins>
     - numero
-    - idGestor
+    - nomeGestor
     - descricao
     - dataInicio
     - dataTermino
     - ativo
+    - createdAt
+    - updatedAt
 
 #### DLD
 
@@ -202,3 +219,4 @@ Esses diagramas são úteis para identificar e analisar as dependências entre d
 | 26/07/2024 | Adiciona DLD's | Lucas Braun |
 | 28/07/2024 | Adiciona diagramas de pacotes | Lucas Braun |
 | 10/08/2024 | Altera diagrama e melhora descrição dos serviços e tecnologias | Lucas Braun |
+| 12/09/2024 | Adiciona novas tabelas do Printer | Lucas Braun |
