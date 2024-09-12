@@ -40,16 +40,15 @@ nav:
       - Sprint 1: andamento/sprint1.md
       - Sprint 2: andamento/sprint2.md
       - Sprint 3: andamento/sprint3.md
-    
-  # - Atas de Reunião:
-  #   - Reuniões:
-  #     - Reunião com POs dia 03/04/2024: atas/03-04.md
-  #     - Reunião com POs dia 10/04/2024: atas/10-04.md
-  #     - Reunião com POs dia 17/04/2024: atas/17-04.md
-  #     - Reunião com POs dia 17/04/2024: atas/24-04.md
-  # - Documentos de Dojo:
-    # - Git: dojo/dojo-git.md
-
+      - Sprint 4: andamento/sprint4.md
+      - Sprint 5: andamento/sprint5.md
+      - Sprint 6: andamento/sprint6.md
+      - Sprint 7: andamento/sprint7.md
+    - Atas de Reunião:
+      - Reunião com POs dia 03/04/2024: atas/03-04.md
+      - Reunião com POs dia 10/04/2024: atas/10-04.md
+      - Reunião com POs dia 17/04/2024: atas/17-04.md
+      - Reunião com POs dia 24/04/2024: atas/24-04.md
 
 
 extra_css:
