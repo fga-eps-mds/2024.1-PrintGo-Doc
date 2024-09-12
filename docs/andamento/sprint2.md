@@ -8,7 +8,7 @@
 - Iniciar o desenvolvimento da US05;
 - Iniciar o desenvolvimento da US06;
 - Iniciar o desenvolvimento da US07;
-- Corrigir apontamentos da Sprint 1;
+- Corrigir apontamentos da Release 1;
 
 ## 2. Atividades da Sprint
 | Tarefa | Responsáveis |

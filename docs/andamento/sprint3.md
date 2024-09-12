@@ -1,4 +1,4 @@
-# Sprint 2
+# Sprint 3
 
 - Data de início: 07/08/2024
 - Data de término: 14/08/2024
